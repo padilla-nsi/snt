@@ -179,7 +179,6 @@ Période 5 (9 semaines, 25/04..fin)
 | Traitement d’image                                                             | Traiter par programme une image pour la transformer en agissant sur les trois composantes de ses pixels.                                              |
 | Rôle des algorithmes dans les appareils photo numériques                       | Expliciter des algorithmes associés à la prise de vue.</br>Identifier les étapes de la construction de l’image finale.                                |
 
-
 ### Contenu transversal - Programmation
 
 | Contenu                                                                                                                                              | Capacité                                                                                                                         |
