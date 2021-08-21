@@ -14,7 +14,7 @@ Période 1 (7 semaines, 02/09..23/10)
 
 | N° semaine | Activité                                                                                          |
 | :--------: | :------------------------------------------------------------------------------------------------ |
-|     36     | Chap 1. [Le réseau Internet](#le-réseau-internet)                                                 |
+|     36     | Chap 1. Le réseau Internet ([cours](../cours/internet/00_plan.md) et [BO](#le-réseau-internet))                                                 |
 |     37     |                                                                                                   |
 |     38     |                                                                                                   |
 |     39     | **DS 1.**                                                                                         |
