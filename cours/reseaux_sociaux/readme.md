@@ -10,6 +10,29 @@
 * ressources académie nantes [site](https://www.pedagogie.ac-nantes.fr/enseignements-informatiques/enseignement/snt/snt-reseaux-sociaux-1181280.kjsp)
 * activité des tableaux [en ligne](http://icnisnlycee.free.fr/index.php/49-snt/le-reseau-social)
 
+Progression
+
+* 15min > classe entière > vidéo de magie
+  * visionner la vidéo
+  * exemple de questions + prise de note carte mentale
+    * Qu'est ce qui est marquant pour vous dans cette vidéo ?
+    * Pourquoi les personnes sont-elles surprises ?
+    * Qu'est ce que l'identité numérique ?
+    * Dave le magicien a-t-il de l'influence sur les persones avant la rencontre ? pendant la rencontre ? à la fin de la rencontre ?
+    * quelles informations détenaient les pirates sur leurs victimes ?
+  * À retenir
+    * l'identité numérique
+    * la e réputation
+    * sécurité
+    * authentification et identification
+* 
+
+|Min|Sujet|Modalité|Productions générées|Consignes|
+|---|-----|--------|--------------------|---------|
+|15min|Identité numérique|Classe entière ; discussion orientée|def identité numérique ; e-réputation ; sécurité ; authentification ; identification | Qu'est ce qui vous a marqué dans cette vidéo? Pourquoi les personnes sont-elles surprises? Le magicien a-t-il une emprise sur ses interlocuteurs? Que pourrait faire quelqu'un de malintentionné? Quelles informations a permit aux pirates d'accéder aux données? Comment sécuriser son compte?|
+|5min|Définition d'un réseau social|classe entière; discussion orientée|Au sens général : liens organisés entre différentes personnes et/ou organisations ayant un point commun ; Au sens informatique : site Internet et/ou application permettant aux visiteurs d’échanger des informations ou du contenu multimédia avec une communauté.|Quelle est la définition d'un réseau social?|
+|5min|Liste des caractéristiques d'un réseau social|
+
 ## BO
 
 | Contenu                                                            | Capacité                                                                                                                                                                                                                             |
