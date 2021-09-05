@@ -8,68 +8,78 @@ L'année scolaire est composée de 34 semaines partagées en 5 périodes :
 * Période 4 : Hiver .. Printemps (avril)
 * Période 5 : Printemps .. Été
 
+Ordre des chapitres :
+
+* Chap 1. [Les réseaux sociaux](#les-réseaux-sociaux)  
+* Chap 2. [Informatique embarquée et objets connectés](#informatique-embarquée-et-objets-connectés)
+* Chap 3. Le réseau Internet ([cours](../cours/internet/00_plan.md) et [BO](#le-réseau-internet))
+* Chap 4. [Le World Wide Web (Web)](#le-world-wide-web-web)
+* Chap 5. [Photographie numérique](#photographie-numérique) 
+* Chap 6. [Données et traitement](#données-et-traitement)
+* Chap 7. [Cartographie et localisation](#cartographie-et-localisation)
+
 Durant chaque période, il y aura au moins un **DS** (Devoir Surveillé).
 
 Période 1 (7 semaines, 02/09..23/10)
 
 | N° semaine | Activité                                                                                          |
 | :--------: | :------------------------------------------------------------------------------------------------ |
-|     36     | Chap 1. Le réseau Internet ([cours](../cours/internet/00_plan.md) et [BO](#le-réseau-internet))                                                 |
-|     37     |                                                                                                   |
-|     38     |                                                                                                   |
-|     39     | **DS 1.**                                                                                         |
-|     40     | Chap 2. [Informatique embarquée et objets connectés](#informatique-embarquée-et-objets-connectés) |
-|     41     |                                                                                                   |
-|     42     |                                                                                                   |
+|     2     | Chap 1. [Les réseaux sociaux](#les-réseaux-sociaux)                   |                                                 |
+|     3     |                                                                                                   |
+|     4     |                                                                                                   |
+|     5     | **DS 1.**                                                                                         |
+|     6     | Chap 2. [Informatique embarquée et objets connectés](#informatique-embarquée-et-objets-connectés) |
+|     7     |                                                                                                   |
+|     8     |                                                                                                   |
 
 Période 2 (6 semaines, 08/11..18/12)
 
 | N° semaine | Activité                                                  |
 | :--------: | :-------------------------------------------------------- |
-|     45     | **DS 2.**                                                 |
-|     46     | Chap 3. [Le World Wide Web (Web)](#le-world-wide-web-web) |
-|     47     |                                                           |
-|     48     |                                                           |
-|     49     |                                                           |
-|     50     | **DS 3.**                                                 |
+|     11     | **DS 2.**                                                 |
+|     12     | Chap 3. Le réseau Internet ([cours](../cours/internet/00_plan.md) et [BO](#le-réseau-internet))
+|     13     |                                                           |
+|     14     |                                                           |
+|     15     |                                                           |
+|     16     | **DS 3.**                                                 |
 
 Période 3 (5 semaines, 03/01..05/02)
 
 | N° semaine | Activité                                                  |
 | :--------: | :-------------------------------------------------------- |
-|     1      | Chap 4. [Photographie numérique](#photographie-numérique) |
-|     2      |                                                           |
-|     3      |                                                           |
-|     4      |                                                           |
-|     5      | **DS 4.**                                                 |
+|     19     | Chap 4. [Le World Wide Web (Web)](#le-world-wide-web-web) |
+|     20     |                                                           |
+|     21     |                                                           |
+|     22     |                                                           |
+|     23     | **DS 4.**                                                 |
 
 Période 4 (7 semaines, 21/02..09/04)
 
 | N° semaine | Activité                                                |
 | :--------: | :------------------------------------------------------ |
-|     8      | Chap 5. [Données et traitement](#données-et-traitement) |
-|     9      |                                                         |
-|     10     |                                                         |
-|     11     | **DS 5.**                                               |
-|     12     | Projet                                                  |
-|     13     | Projet                                                  |
-|     14     | Projet                                                  |
+|     26     | Chap 5. [Photographie numérique](#photographie-numérique) |
+|     27     |                                                         |
+|     28     |                                                         |
+|     29     | **DS 5.**                                               |
+|     30     | Projet                                                  |
+|     31     | Projet                                                  |
+|     32     | Projet                                                  |
 
 Période 5 (9 semaines, 25/04..fin)
 
 | N° semaine | Activité                                                              |
 | :--------: | :-------------------------------------------------------------------- |
-|     17     | Chap 6. [Les réseaux sociaux](#les-réseaux-sociaux)                   |
-|     18     | Chap 6.                                                               |
-|     19     | Chap 6.                                                               |
-|     20     | **DS 6.**                                                             |
-|     21     | Chap 7. [Cartographie et localisation](#cartographie-et-localisation) |
-|     22     | Chap 7.                                                               |
-|     23     | Chap 7.                                                               |
-|     23     | **DS 7**                                                              |
-|     24     | Projet                                                                |
-|     25     | Projet                                                                |
-|     26     | Projet                                                                |
+|     35     | Chap 6. [Données et traitement](#données-et-traitement) |
+|     36     | Chap 6.                                                               |
+|     37     | Chap 6.                                                               |
+|     38     | **DS 6.**                                                             |
+|     39     | Chap 7. [Cartographie et localisation](#cartographie-et-localisation) |
+|     40     | Chap 7.                                                               |
+|     41     | Chap 7.                                                               |
+|     42     | **DS 7**                                                              |
+|     43     | Projet                                                                |
+|     44     | Projet                                                                |
+|     45     | Projet                                                                |
 
 * Chap. transversal - [Programmation](#contenu-transversal---programmation)
 
