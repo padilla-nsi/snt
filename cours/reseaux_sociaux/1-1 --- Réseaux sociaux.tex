@@ -674,6 +674,126 @@ CAHIER}\label{page-uxe0-coller-sur-le-cahier-2}}
 .
 
             \end{formule}
+    \hypertarget{moduxe9lisation-par-des-graphes}{%
+\subsection{Modélisation par des
+graphes}\label{moduxe9lisation-par-des-graphes}}
+
+    Les réseaux sociaux peuvent être modélisés par un \textbf{graphe}.
+
+Un graphe est composé de \textbf{sommets} et d'\textbf{arêtes}
+(ou~\emph{arcs}) reliant certains de ces sommets.
+\begin{exemple}
+    Par exemple, voici deux graphes :
+
+\includegraphics{res/graphe1.png} \includegraphics{res/graphe2.png}
+
+            \end{exemple}\begin{eleve}
+    Pour le premier graphe :
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  \textbf{Proposer} un sommet qui en soit le \textbf{centre}.
+\end{enumerate}
+
+Pour le deuxième graphe :
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\setcounter{enumi}{1}
+\tightlist
+\item
+  \textbf{Compléter} le tableau ci-dessous puis \textbf{proposer} un
+  sommet qui en soit le centre.
+\end{enumerate}
+
+\begin{longtable}[]{@{}lllllll@{}}
+\toprule
+distance de & A & B & C & D & E & Distance maximale\tabularnewline
+\midrule
+\endhead
+A & & & & & &\tabularnewline
+B & & & & & &\tabularnewline
+C & & & & & &\tabularnewline
+D & & & & & &\tabularnewline
+E & & & & & &\tabularnewline
+\bottomrule
+\end{longtable}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\setcounter{enumi}{2}
+\tightlist
+\item
+  Que \textbf{remarquez}-vous à propos de ces deux graphes ?
+\end{enumerate}
+        
+        \end{eleve}
+    \begin{multicols}{2}
+        \scriptsize
+        
+    \begin{tcolorbox}[breakable, size=fbox, boxrule=1pt, pad at break*=1mm,colback=cellbackground, colframe=cellborder]
+\prompt{In}{incolor}{29}{\boxspacing}
+\begin{Verbatim}[commandchars=\\\{\}]
+\PY{c+c1}{\PYZsh{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}}
+\PY{c+c1}{\PYZsh{} Application permet de tracer un graphe pour }
+\PY{c+c1}{\PYZsh{} simuler un réseau social.}
+\PY{c+c1}{\PYZsh{} On ajoute des sommets }
+\PY{c+c1}{\PYZsh{} On dessine les arêtes entre les sommets voulus}
+\PY{c+c1}{\PYZsh{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}}
+
+\PY{k+kn}{from} \PY{n+nn}{networkx} \PY{k+kn}{import} \PY{n}{nx}\PY{p}{,}\PY{n}{diameter}\PY{p}{,}\PY{n}{radius}\PY{p}{,}\PY{n}{center}
+\PY{k+kn}{import} \PY{n+nn}{matplotlib}\PY{n+nn}{.}\PY{n+nn}{pyplot} \PY{k}{as} \PY{n+nn}{plt}
+
+\PY{c+c1}{\PYZsh{} Créer un nouveau graphe et l\PYZsq{}appeler `reseau\PYZus{}social`}
+\PY{n}{reseau\PYZus{}social}\PY{o}{=}\PY{n}{nx}\PY{o}{.}\PY{n}{Graph}\PY{p}{(}\PY{p}{)}
+
+\PY{c+c1}{\PYZsh{} Ajouter les sommets}
+\PY{n}{reseau\PYZus{}social}\PY{o}{.}\PY{n}{add\PYZus{}node}\PY{p}{(}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{laurent}\PY{l+s+s1}{\PYZsq{}}\PY{p}{)}
+\PY{n}{reseau\PYZus{}social}\PY{o}{.}\PY{n}{add\PYZus{}node}\PY{p}{(}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{pierre}\PY{l+s+s1}{\PYZsq{}}\PY{p}{)}
+\PY{n}{reseau\PYZus{}social}\PY{o}{.}\PY{n}{add\PYZus{}node}\PY{p}{(}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{lucie}\PY{l+s+s1}{\PYZsq{}}\PY{p}{)}
+\PY{n}{reseau\PYZus{}social}\PY{o}{.}\PY{n}{add\PYZus{}node}\PY{p}{(}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{sophie}\PY{l+s+s1}{\PYZsq{}}\PY{p}{)}
+\PY{n}{reseau\PYZus{}social}\PY{o}{.}\PY{n}{add\PYZus{}node}\PY{p}{(}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{martin}\PY{l+s+s1}{\PYZsq{}}\PY{p}{)}
+\PY{n}{reseau\PYZus{}social}\PY{o}{.}\PY{n}{add\PYZus{}node}\PY{p}{(}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{jacques}\PY{l+s+s1}{\PYZsq{}}\PY{p}{)}
+
+\PY{c+c1}{\PYZsh{} Ajouter les arêtes}
+\PY{n}{reseau\PYZus{}social}\PY{o}{.}\PY{n}{add\PYZus{}edge}\PY{p}{(}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{laurent}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{pierre}\PY{l+s+s1}{\PYZsq{}}\PY{p}{)}
+\PY{n}{reseau\PYZus{}social}\PY{o}{.}\PY{n}{add\PYZus{}edge}\PY{p}{(}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{lucie}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{pierre}\PY{l+s+s1}{\PYZsq{}}\PY{p}{)}
+\PY{n}{reseau\PYZus{}social}\PY{o}{.}\PY{n}{add\PYZus{}edge}\PY{p}{(}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{sophie}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{martin}\PY{l+s+s1}{\PYZsq{}}\PY{p}{)}
+\PY{n}{reseau\PYZus{}social}\PY{o}{.}\PY{n}{add\PYZus{}edge}\PY{p}{(}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{martin}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{laurent}\PY{l+s+s1}{\PYZsq{}}\PY{p}{)}
+\PY{n}{reseau\PYZus{}social}\PY{o}{.}\PY{n}{add\PYZus{}edge}\PY{p}{(}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{jacques}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{martin}\PY{l+s+s1}{\PYZsq{}}\PY{p}{)}
+\PY{n}{reseau\PYZus{}social}\PY{o}{.}\PY{n}{add\PYZus{}edge}\PY{p}{(}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{jacques}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{laurent}\PY{l+s+s1}{\PYZsq{}}\PY{p}{)}
+
+\PY{c+c1}{\PYZsh{} Afficher le graphe `reseau\PYZus{}social`}
+\PY{n}{nx}\PY{o}{.}\PY{n}{draw}\PY{p}{(}\PY{n}{reseau\PYZus{}social}\PY{p}{,} \PY{n}{with\PYZus{}labels}\PY{o}{=}\PY{k+kc}{True}\PY{p}{)}
+\PY{n}{plt}\PY{o}{.}\PY{n}{draw}\PY{p}{(}\PY{p}{)}
+\PY{n}{plt}\PY{o}{.}\PY{n}{show}\PY{p}{(}\PY{p}{)}
+
+\PY{c+c1}{\PYZsh{} Afficher les mesures sur les graphes}
+\PY{n+nb}{print}\PY{p}{(}\PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{nombre de sommets=}\PY{l+s+s2}{\PYZdq{}}\PY{p}{,}\PY{n}{reseau\PYZus{}social}\PY{o}{.}\PY{n}{number\PYZus{}of\PYZus{}nodes}\PY{p}{(}\PY{p}{)}\PY{p}{)}
+\PY{n+nb}{print}\PY{p}{(}\PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{nombre de arêtes=}\PY{l+s+s2}{\PYZdq{}}\PY{p}{,}\PY{n}{reseau\PYZus{}social}\PY{o}{.}\PY{n}{number\PYZus{}of\PYZus{}edges}\PY{p}{(}\PY{p}{)}\PY{p}{)}
+\PY{n+nb}{print}\PY{p}{(}\PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{Diamètre=}\PY{l+s+s2}{\PYZdq{}}\PY{p}{,}\PY{n}{diameter}\PY{p}{(}\PY{n}{reseau\PYZus{}social}\PY{p}{)}\PY{p}{)}
+\PY{n+nb}{print}\PY{p}{(}\PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{Rayon=}\PY{l+s+s2}{\PYZdq{}}\PY{p}{,}\PY{n}{radius}\PY{p}{(}\PY{n}{reseau\PYZus{}social}\PY{p}{)}\PY{p}{)}
+\PY{n+nb}{print}\PY{p}{(}\PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{Centre=}\PY{l+s+s2}{\PYZdq{}}\PY{p}{,}\PY{n}{center}\PY{p}{(}\PY{n}{reseau\PYZus{}social}\PY{p}{)}\PY{p}{)}
+\end{Verbatim}
+\end{tcolorbox}
+    
+    \end{multicols}
+
+    \begin{center}
+    \adjustimage{max size={0.9\linewidth}{0.9\paperheight}}{1-1 --- Réseaux sociaux_files/1-1 --- Réseaux sociaux_18_0.png}
+    \end{center}
+    { \hspace*{\fill} \\}
+    
+    \begin{Verbatim}[commandchars=\\\{\}]
+nombre de sommets= 6
+nombre de arêtes= 6
+Diamètre= 4
+Rayon= 2
+Centre= ['laurent']
+    \end{Verbatim}
+
 
     % Add a bibliography block to the postdoc
     
