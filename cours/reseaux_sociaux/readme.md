@@ -32,14 +32,12 @@ Chap. 1 Réseaux sociaux
 
 ## Modélisation par des graphes
 
-* 
-
 * activité débranchée [exemple](https://mikecardus.com/social-network-un_plugged/)
 * un site internet : do not track
 * *** vidéo magie [faux voyant](https://www.youtube.com/watch?v=heReIQVLya4)
   * identité (nom prénom) connue à l'avance
   * 2012 !
-* article 222-33-2-2 du code pénal a été vu sous la forme d’un devoir maison de CSS : l’article a été remis en html aux élèves chargés de rendre le texte facile et agréable à lire ! 
+* article 222-33-2-2 du code pénal a été vu sous la forme d’un devoir maison de CSS : l’article a été remis en html aux élèves chargés de rendre le texte facile et agréable à lire!
 * Les réseaux sociaux ont surtout été modélisés par des graphes et les notions de théorie des graphes qui sont au programme de 2nde ont été découvertes en se déplaçant sur un graphe, dans le cadre d’un jeu
 * ressources académie nantes [site](https://www.pedagogie.ac-nantes.fr/enseignements-informatiques/enseignement/snt/snt-reseaux-sociaux-1181280.kjsp)
 * activité des tableaux [en ligne](http://icnisnlycee.free.fr/index.php/49-snt/le-reseau-social)
@@ -59,7 +57,6 @@ Progression
     * la e réputation
     * sécurité
     * authentification et identification
-* 
 
 |Min|Sujet|Modalité|Productions générées|Consignes|
 |---|-----|--------|--------------------|---------|
