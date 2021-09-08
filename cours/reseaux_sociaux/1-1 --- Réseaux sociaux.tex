@@ -574,8 +574,8 @@ existants}\label{ruxe9seaux-sociaux-existants}}
 \def\labelenumi{\arabic{enumi}.}
 \tightlist
 \item
-  \textbf{rechercher} \emph{au moins} les informations suivantes sur le
-  réseau social qui vous a été assigné :
+  \textbf{rechercher} les informations suivantes (ou plus) sur le réseau
+  social qui vous a été assigné :
 \end{enumerate}
 
 \begin{longtable}[]{@{}llll@{}}
@@ -585,7 +585,7 @@ Nom\strut
 \end{minipage} & \begin{minipage}[b]{0.22\columnwidth}\raggedright
 Logo\strut
 \end{minipage} & \begin{minipage}[b]{0.22\columnwidth}\raggedright
-Carte d'identité\strut
+Carte d'identité (caractéristiques de la partie 1.1)\strut
 \end{minipage} & \begin{minipage}[b]{0.22\columnwidth}\raggedright
 Fonctionnement général\strut
 \end{minipage}\tabularnewline
@@ -678,7 +678,7 @@ CAHIER}\label{page-uxe0-coller-sur-le-cahier-2}}
 \subsection{Modélisation par des
 graphes}\label{moduxe9lisation-par-des-graphes}}
 
-    Les réseaux sociaux peuvent être modélisés par un \textbf{graphe}.
+    Les réseaux sociaux peuvent être modélisés par des \textbf{graphe}.
 
 Un graphe est composé de \textbf{sommets} et d'\textbf{arêtes}
 (ou~\emph{arcs}) reliant certains de ces sommets.
@@ -688,7 +688,7 @@ Un graphe est composé de \textbf{sommets} et d'\textbf{arêtes}
 \includegraphics{res/graphe1.png} \includegraphics{res/graphe2.png}
 
             \end{exemple}\begin{eleve}
-    Pour le premier graphe :
+    Pour le premier graphe de l'exemple :
 
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
@@ -706,9 +706,12 @@ Pour le deuxième graphe :
 \item
   \textbf{Compléter} le tableau ci-dessous puis \textbf{proposer} un
   sommet qui en soit le centre.
+\item
+  Que \textbf{remarquez}-vous à propos de ces deux graphes ?
 \end{enumerate}
-
-\begin{longtable}[]{@{}lllllll@{}}
+        
+        \end{eleve}\begin{reponse}
+    \begin{longtable}[]{@{}lllllll@{}}
 \toprule
 distance de & A & B & C & D & E & Distance maximale\tabularnewline
 \midrule
@@ -721,49 +724,48 @@ E & & & & & &\tabularnewline
 \bottomrule
 \end{longtable}
 
-\begin{enumerate}
-\def\labelenumi{\arabic{enumi}.}
-\setcounter{enumi}{2}
-\tightlist
-\item
-  Que \textbf{remarquez}-vous à propos de ces deux graphes ?
-\end{enumerate}
-        
-        \end{eleve}
+.
+
+.
+
+.
+
+            \end{reponse}
+    \hypertarget{pour-aller-plus-loin}{%
+\subsection{Pour aller plus loin}\label{pour-aller-plus-loin}}
+
+    Il est possible de créer des graphes avec python. Pour cela, on peut
+utiliser la bibliothèque \texttt{networkx} qui permet aussi de
+déterminer le nombre de sommets et d'arêtes, le diamètre, le rayon et le
+centre d'un graphe.
+
     \begin{multicols}{2}
         \scriptsize
         
     \begin{tcolorbox}[breakable, size=fbox, boxrule=1pt, pad at break*=1mm,colback=cellbackground, colframe=cellborder]
-\prompt{In}{incolor}{29}{\boxspacing}
+\prompt{In}{incolor}{42}{\boxspacing}
 \begin{Verbatim}[commandchars=\\\{\}]
-\PY{c+c1}{\PYZsh{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}}
-\PY{c+c1}{\PYZsh{} Application permet de tracer un graphe pour }
-\PY{c+c1}{\PYZsh{} simuler un réseau social.}
-\PY{c+c1}{\PYZsh{} On ajoute des sommets }
-\PY{c+c1}{\PYZsh{} On dessine les arêtes entre les sommets voulus}
-\PY{c+c1}{\PYZsh{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}}
-
 \PY{k+kn}{from} \PY{n+nn}{networkx} \PY{k+kn}{import} \PY{n}{nx}\PY{p}{,}\PY{n}{diameter}\PY{p}{,}\PY{n}{radius}\PY{p}{,}\PY{n}{center}
-\PY{k+kn}{import} \PY{n+nn}{matplotlib}\PY{n+nn}{.}\PY{n+nn}{pyplot} \PY{k}{as} \PY{n+nn}{plt}
+\PY{k+kn}{import} \PY{n+nn}{matplotlib}\PY{n+nn}{.}\PY{n+nn}{pyplot} \PY{k}{as} \PY{n+nn}{plt}\PY{o}{,} \PY{n+nn}{figure}
+\PY{n}{figure}\PY{p}{(}\PY{n}{figsize}\PY{o}{=}\PY{p}{(}\PY{l+m+mi}{8}\PY{p}{,} \PY{l+m+mi}{6}\PY{p}{)}\PY{p}{,} \PY{n}{dpi}\PY{o}{=}\PY{l+m+mi}{80}\PY{p}{)}
 
 \PY{c+c1}{\PYZsh{} Créer un nouveau graphe et l\PYZsq{}appeler `reseau\PYZus{}social`}
 \PY{n}{reseau\PYZus{}social}\PY{o}{=}\PY{n}{nx}\PY{o}{.}\PY{n}{Graph}\PY{p}{(}\PY{p}{)}
 
 \PY{c+c1}{\PYZsh{} Ajouter les sommets}
-\PY{n}{reseau\PYZus{}social}\PY{o}{.}\PY{n}{add\PYZus{}node}\PY{p}{(}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{laurent}\PY{l+s+s1}{\PYZsq{}}\PY{p}{)}
-\PY{n}{reseau\PYZus{}social}\PY{o}{.}\PY{n}{add\PYZus{}node}\PY{p}{(}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{pierre}\PY{l+s+s1}{\PYZsq{}}\PY{p}{)}
-\PY{n}{reseau\PYZus{}social}\PY{o}{.}\PY{n}{add\PYZus{}node}\PY{p}{(}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{lucie}\PY{l+s+s1}{\PYZsq{}}\PY{p}{)}
-\PY{n}{reseau\PYZus{}social}\PY{o}{.}\PY{n}{add\PYZus{}node}\PY{p}{(}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{sophie}\PY{l+s+s1}{\PYZsq{}}\PY{p}{)}
-\PY{n}{reseau\PYZus{}social}\PY{o}{.}\PY{n}{add\PYZus{}node}\PY{p}{(}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{martin}\PY{l+s+s1}{\PYZsq{}}\PY{p}{)}
-\PY{n}{reseau\PYZus{}social}\PY{o}{.}\PY{n}{add\PYZus{}node}\PY{p}{(}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{jacques}\PY{l+s+s1}{\PYZsq{}}\PY{p}{)}
+\PY{n}{reseau\PYZus{}social}\PY{o}{.}\PY{n}{add\PYZus{}node}\PY{p}{(}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{A}\PY{l+s+s1}{\PYZsq{}}\PY{p}{)}
+\PY{n}{reseau\PYZus{}social}\PY{o}{.}\PY{n}{add\PYZus{}node}\PY{p}{(}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{B}\PY{l+s+s1}{\PYZsq{}}\PY{p}{)}
+\PY{n}{reseau\PYZus{}social}\PY{o}{.}\PY{n}{add\PYZus{}node}\PY{p}{(}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{C}\PY{l+s+s1}{\PYZsq{}}\PY{p}{)}
+\PY{n}{reseau\PYZus{}social}\PY{o}{.}\PY{n}{add\PYZus{}node}\PY{p}{(}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{D}\PY{l+s+s1}{\PYZsq{}}\PY{p}{)}
+\PY{n}{reseau\PYZus{}social}\PY{o}{.}\PY{n}{add\PYZus{}node}\PY{p}{(}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{E}\PY{l+s+s1}{\PYZsq{}}\PY{p}{)}
 
 \PY{c+c1}{\PYZsh{} Ajouter les arêtes}
-\PY{n}{reseau\PYZus{}social}\PY{o}{.}\PY{n}{add\PYZus{}edge}\PY{p}{(}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{laurent}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{pierre}\PY{l+s+s1}{\PYZsq{}}\PY{p}{)}
-\PY{n}{reseau\PYZus{}social}\PY{o}{.}\PY{n}{add\PYZus{}edge}\PY{p}{(}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{lucie}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{pierre}\PY{l+s+s1}{\PYZsq{}}\PY{p}{)}
-\PY{n}{reseau\PYZus{}social}\PY{o}{.}\PY{n}{add\PYZus{}edge}\PY{p}{(}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{sophie}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{martin}\PY{l+s+s1}{\PYZsq{}}\PY{p}{)}
-\PY{n}{reseau\PYZus{}social}\PY{o}{.}\PY{n}{add\PYZus{}edge}\PY{p}{(}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{martin}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{laurent}\PY{l+s+s1}{\PYZsq{}}\PY{p}{)}
-\PY{n}{reseau\PYZus{}social}\PY{o}{.}\PY{n}{add\PYZus{}edge}\PY{p}{(}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{jacques}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{martin}\PY{l+s+s1}{\PYZsq{}}\PY{p}{)}
-\PY{n}{reseau\PYZus{}social}\PY{o}{.}\PY{n}{add\PYZus{}edge}\PY{p}{(}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{jacques}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{laurent}\PY{l+s+s1}{\PYZsq{}}\PY{p}{)}
+\PY{n}{reseau\PYZus{}social}\PY{o}{.}\PY{n}{add\PYZus{}edge}\PY{p}{(}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{A}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{E}\PY{l+s+s1}{\PYZsq{}}\PY{p}{)}
+\PY{n}{reseau\PYZus{}social}\PY{o}{.}\PY{n}{add\PYZus{}edge}\PY{p}{(}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{B}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{C}\PY{l+s+s1}{\PYZsq{}}\PY{p}{)}
+\PY{n}{reseau\PYZus{}social}\PY{o}{.}\PY{n}{add\PYZus{}edge}\PY{p}{(}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{B}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{E}\PY{l+s+s1}{\PYZsq{}}\PY{p}{)}
+\PY{n}{reseau\PYZus{}social}\PY{o}{.}\PY{n}{add\PYZus{}edge}\PY{p}{(}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{C}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{D}\PY{l+s+s1}{\PYZsq{}}\PY{p}{)}
+\PY{n}{reseau\PYZus{}social}\PY{o}{.}\PY{n}{add\PYZus{}edge}\PY{p}{(}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{C}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{E}\PY{l+s+s1}{\PYZsq{}}\PY{p}{)}
+\PY{n}{reseau\PYZus{}social}\PY{o}{.}\PY{n}{add\PYZus{}edge}\PY{p}{(}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{D}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{E}\PY{l+s+s1}{\PYZsq{}}\PY{p}{)}
 
 \PY{c+c1}{\PYZsh{} Afficher le graphe `reseau\PYZus{}social`}
 \PY{n}{nx}\PY{o}{.}\PY{n}{draw}\PY{p}{(}\PY{n}{reseau\PYZus{}social}\PY{p}{,} \PY{n}{with\PYZus{}labels}\PY{o}{=}\PY{k+kc}{True}\PY{p}{)}
@@ -782,16 +784,22 @@ E & & & & & &\tabularnewline
     \end{multicols}
 
     \begin{center}
-    \adjustimage{max size={0.9\linewidth}{0.9\paperheight}}{1-1 --- Réseaux sociaux_files/1-1 --- Réseaux sociaux_18_0.png}
+    \adjustimage{max size={0.9\linewidth}{0.9\paperheight}}{1-1 --- Réseaux sociaux_files/1-1 --- Réseaux sociaux_21_0.png}
     \end{center}
     { \hspace*{\fill} \\}
     
+    
+    \begin{verbatim}
+<Figure size 576x432 with 0 Axes>
+    \end{verbatim}
+
+    
     \begin{Verbatim}[commandchars=\\\{\}]
-nombre de sommets= 6
+nombre de sommets= 5
 nombre de arêtes= 6
-Diamètre= 4
-Rayon= 2
-Centre= ['laurent']
+Diamètre= 2
+Rayon= 1
+Centre= ['E']
     \end{Verbatim}
 
 
