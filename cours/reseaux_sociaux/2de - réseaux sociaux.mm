@@ -3,7 +3,7 @@
 <node TEXT="Réseaux sociaux" LOCALIZED_STYLE_REF="AutomaticLayout.level.root" FOLDED="false" ID="ID_1090958577" CREATED="1409300609620" MODIFIED="1630875847233">
 <hook NAME="accessories/plugins/AutomaticLayout.properties" VALUE="ALL"/>
 <font BOLD="true"/>
-<hook NAME="MapStyle" background="#f9f9f8" zoom="1.003">
+<hook NAME="MapStyle" background="#f9f9f8" zoom="0.912">
     <properties show_icon_for_attributes="true" edgeColorConfiguration="#808080ff,#ff0000ff,#0000ffff,#00ff00ff,#ff00ffff,#00ffffff,#7c0000ff,#00007cff,#007c00ff,#7c007cff,#007c7cff,#7c7c00ff" show_note_icons="true" fit_to_viewport="false"/>
 
 <map_styles>
@@ -90,7 +90,7 @@
 <node TEXT="Donner des exemples de réseaux sociaux à étudier" ID="ID_114617993" CREATED="1630868916871" MODIFIED="1630868962511"/>
 </node>
 <node TEXT="propositions" ID="ID_1991239856" CREATED="1630869436048" MODIFIED="1630872046450">
-<node TEXT="définition" ID="ID_19323897" CREATED="1630868845973" MODIFIED="1630869457082">
+<node TEXT="définition" FOLDED="true" ID="ID_19323897" CREATED="1630868845973" MODIFIED="1630869457082">
 <node ID="ID_1286417477" CREATED="1630868862397" MODIFIED="1630868887877"><richcontent TYPE="NODE">
 
 <html>
@@ -147,7 +147,7 @@
 </node>
 </node>
 </node>
-<node TEXT="Activité 2" POSITION="left" ID="ID_660827462" CREATED="1630869511516" MODIFIED="1630869523483">
+<node TEXT="Activité 2" POSITION="right" ID="ID_660827462" CREATED="1630869511516" MODIFIED="1630869523483">
 <node TEXT="Vidéo 1 - myshadow" ID="ID_448870781" CREATED="1630871929521" MODIFIED="1630872320419" LINK="2de%20-%20réseaux%20sociaux_files/myshadow.mp4">
 <node TEXT="Question 1" ID="ID_891574768" CREATED="1630872400872" MODIFIED="1630872404709">
 <node ID="ID_828423448" CREATED="1630872405738" MODIFIED="1630872460319"><richcontent TYPE="NODE">
