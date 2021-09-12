@@ -7,16 +7,13 @@
 - liste du matériel (petit cahier, écouteur pour tablette)
 - Qu'est ce que la S.N.T. : carte mentale
 
-
 ### Chap. 1 - Les réseaux sociaux
-
 
 ### 1.1 Caractériser les réseaux sociaux
 
 - par groupe, définition d'un réseau social
 - caractéristiques des réseaux sociaux
 - liste des réseaux sociaux existants
-
 
 ### 1.2 e-réputation et bonnes pratiques
 
@@ -27,20 +24,27 @@
   - def. e-réputation
   - def. bonnes pratiques
 
-
 ### 1.3 Réseaux sociaux existants
 
-* recherche sur un réseaux social
-* préparation et mise en forme exposé
+- recherche sur un réseaux social
+- préparation et mise en forme exposé
 
+### 2.1 Réseau social d'un groupe et modélisation
 
-### 3. Notions de "petit monde"
+- créer par groupe son propre réseau social
+- modélisation par un graphe
+- déterminer centre, rayon et diamètre
 
-* activité "créer son réseau social"
-* vidéo : https://www.youtube.com/watch?v=P7xItpdmXoc
-* vidéo : https://www.youtube.com/watch?v=gOiIQ0qGiCc
+### 2.2 Application
 
-## Modélisation par des graphes
+- centre d'un graphe
+- pour aller plus loin
+
+### 3.1 Notions de "petit monde"
+
+- activité "créer son réseau social"
+- vidéo : https://www.youtube.com/watch?v=P7xItpdmXoc
+- vidéo : https://www.youtube.com/watch?v=gOiIQ0qGiCc
 
 * activité débranchée [exemple](https://mikecardus.com/social-network-un_plugged/)
 * un site internet : do not track

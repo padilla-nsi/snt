@@ -3,7 +3,7 @@
 <node TEXT="Réseaux sociaux" LOCALIZED_STYLE_REF="AutomaticLayout.level.root" FOLDED="false" ID="ID_1090958577" CREATED="1409300609620" MODIFIED="1630875847233">
 <hook NAME="accessories/plugins/AutomaticLayout.properties" VALUE="ALL"/>
 <font BOLD="true"/>
-<hook NAME="MapStyle" background="#f9f9f8" zoom="1.003">
+<hook NAME="MapStyle" background="#f9f9f8" zoom="0.912">
     <properties show_icon_for_attributes="true" edgeColorConfiguration="#808080ff,#ff0000ff,#0000ffff,#00ff00ff,#ff00ffff,#00ffffff,#7c0000ff,#00007cff,#007c00ff,#7c007cff,#007c7cff,#7c7c00ff" show_note_icons="true" fit_to_viewport="false"/>
 
 <map_styles>
@@ -132,6 +132,8 @@
 <node TEXT="- Facebook" ID="ID_687840990" CREATED="1630869054462" MODIFIED="1630869257069">
 <font ITALIC="false"/>
 </node>
+<node TEXT="- Copains d&apos;avant" ID="ID_551891120" CREATED="1631473815082" MODIFIED="1631473826074"/>
+<node TEXT="- Classmate" ID="ID_1843523873" CREATED="1631473826545" MODIFIED="1631473836249"/>
 <node TEXT="- Twitter" ID="ID_450270425" CREATED="1630869054462" MODIFIED="1630869054462"/>
 <node TEXT="- Snapchat" ID="ID_1970003905" CREATED="1630869054463" MODIFIED="1630869054463"/>
 <node TEXT="- TikTok" ID="ID_1744684920" CREATED="1630869054464" MODIFIED="1630869054464"/>
@@ -147,7 +149,7 @@
 </node>
 </node>
 <node TEXT="Bonnes pratiques des réseaux sociaux" FOLDED="true" POSITION="right" ID="ID_660827462" CREATED="1630869511516" MODIFIED="1631347631951">
-<node TEXT="Vidéo 1 - myshadow" ID="ID_448870781" CREATED="1630871929521" MODIFIED="1630872320419" LINK="res/myshadow.mp4">
+<node TEXT="Vidéo 1 - myshadow" FOLDED="true" ID="ID_448870781" CREATED="1630871929521" MODIFIED="1630872320419" LINK="res/myshadow.mp4">
 <node TEXT="Question 1" ID="ID_891574768" CREATED="1630872400872" MODIFIED="1630872404709">
 <node ID="ID_828423448" CREATED="1630872405738" MODIFIED="1630872460319"><richcontent TYPE="NODE">
 
@@ -204,14 +206,121 @@
 <node TEXT="Définitions" ID="ID_1306578589" CREATED="1630872108547" MODIFIED="1630872151450">
 <node TEXT="e-réputation" ID="ID_1812547339" CREATED="1630872158996" MODIFIED="1630872163962"/>
 </node>
-<node TEXT="Bonnes pratiques" ID="ID_1375596584" CREATED="1630872173518" MODIFIED="1630872185231">
+<node TEXT="Bonnes pratiques" FOLDED="true" ID="ID_1375596584" CREATED="1630872173518" MODIFIED="1630872185231">
 <node TEXT="Sécuriser ses comptes" ID="ID_1056460891" CREATED="1630872186444" MODIFIED="1630872203788"/>
 <node TEXT="Méthodes d&apos;authentification" ID="ID_41727326" CREATED="1630872207080" MODIFIED="1630872218568"/>
+<node TEXT="Exemple de site sécurisé : Atrium" ID="ID_185067750" CREATED="1631477386639" MODIFIED="1631477398617">
+<node TEXT="https://pa.dilla.fr/X" ID="ID_159236094" CREATED="1631477411688" MODIFIED="1631477426462" LINK="https://pa.dilla.fr/X"/>
+</node>
 </node>
 </node>
 <node TEXT="Fiche identité" FOLDED="true" POSITION="right" ID="ID_577718557" CREATED="1630875877164" MODIFIED="1631347684128">
 <node TEXT="Groupe de 2, poste informatique" ID="ID_1947374755" CREATED="1630880560531" MODIFIED="1630880568693"/>
-<node TEXT="Recherche sur les réseaux sociaux existants" ID="ID_513389408" CREATED="1630880545626" MODIFIED="1630880557851"/>
+<node TEXT="Recherche sur les réseaux sociaux existants" ID="ID_513389408" CREATED="1630880545626" MODIFIED="1630880557851">
+<node TEXT="Facebook, Copains d&apos;avant, Classmate, Twitter, Snapchat, TikTok, WhatsApp, Pinterest, Waze, LinkedIn, YouTube, Instagram, Strava" ID="ID_1237343445" CREATED="1631473894508" MODIFIED="1631473899497"/>
+</node>
+<node TEXT="Carte d&apos;identité" FOLDED="true" ID="ID_1381406120" CREATED="1631477523633" MODIFIED="1631477529330">
+<node TEXT="URL" FOLDED="true" ID="ID_1002508161" CREATED="1630869075526" MODIFIED="1631347936182">
+<node TEXT="adresse internet" ID="ID_1687379197" CREATED="1631347960816" MODIFIED="1631347968876"/>
+</node>
+<node TEXT="Date de mise en ligne" ID="ID_1532931333" CREATED="1630869075526" MODIFIED="1631347976978"/>
+<node TEXT="Fondateur(s)" ID="ID_1369149118" CREATED="1630869075527" MODIFIED="1631347978572"/>
+<node TEXT="Siège social" ID="ID_780522557" CREATED="1630869075527" MODIFIED="1631347971501"/>
+<node TEXT="Public visé" ID="ID_1375780134" CREATED="1630869075532" MODIFIED="1631347979956"/>
+<node TEXT="Finalité" FOLDED="true" ID="ID_1256228040" CREATED="1630869075528" MODIFIED="1631347973337">
+<node TEXT="objectif, but du réseau social" ID="ID_1809281844" CREATED="1631348106062" MODIFIED="1631348113159"/>
+</node>
+<node TEXT="Modèle économique" ID="ID_1583399994" CREATED="1630869075535" MODIFIED="1631347984164"/>
+<node TEXT="Nombre d’abonnés" FOLDED="true" ID="ID_187032169" CREATED="1630869075528" MODIFIED="1631347950191">
+<node TEXT="voir la différence entre abonnés actifs et abonnés inactifs" ID="ID_1865905658" CREATED="1631347953230" MODIFIED="1631347957291"/>
+</node>
+<node TEXT="Style graphique" FOLDED="true" ID="ID_305035630" CREATED="1631348052192" MODIFIED="1631348057739">
+<node TEXT="logo" ID="ID_1111688987" CREATED="1631348058898" MODIFIED="1631348060788"/>
+<node TEXT="couleurs" ID="ID_783720671" CREATED="1631348060993" MODIFIED="1631348062844"/>
+<node TEXT="..." ID="ID_1569359458" CREATED="1631348063266" MODIFIED="1631348065156"/>
+</node>
+</node>
+</node>
+<node TEXT="Graphes" POSITION="right" ID="ID_1345520194" CREATED="1631469948260" MODIFIED="1631473799906">
+<node TEXT="Unplugged" ID="ID_324193910" CREATED="1631477773857" MODIFIED="1631477784344"/>
+<node TEXT="Définitions" FOLDED="true" ID="ID_803782368" CREATED="1631477761508" MODIFIED="1631477768761">
+<node ID="ID_1580608746" CREATED="1631469996275" MODIFIED="1631470020398"><richcontent TYPE="NODE">
+
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      <b>nœud</b>&nbsp;: représenté par un rectangle/ovale/cercle ; sert à modéliser une personne ou une entité sociale
+    </p>
+  </body>
+</html>
+
+</richcontent>
+</node>
+<node ID="ID_609806376" CREATED="1631469996276" MODIFIED="1631470038023"><richcontent TYPE="NODE">
+
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      <b>arête</b>&nbsp;: représentée par un trait entre deux nœuds ; sert à modéliser une relation non orientée entre deux personnes ou entités.
+    </p>
+  </body>
+</html>
+
+</richcontent>
+</node>
+<node ID="ID_1281369522" CREATED="1631469996276" MODIFIED="1631473799904"><richcontent TYPE="NODE">
+
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      <b>arc</b>&nbsp;: représenté par une flèche entre deux nœuds ; sert à modéliser une relation orientée d'une personne ou entité vers une autre.
+    </p>
+  </body>
+</html>
+
+</richcontent>
+</node>
+<node ID="ID_496812362" CREATED="1631469996276" MODIFIED="1631470050024"><richcontent TYPE="NODE">
+
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      Un <b>graphe non orienté</b>&nbsp;est un ensemble de noœuds et d'arêtes entre ces nœuds.
+    </p>
+  </body>
+</html>
+
+</richcontent>
+</node>
+<node ID="ID_1424594138" CREATED="1631469996276" MODIFIED="1631470055322"><richcontent TYPE="NODE">
+
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      Un <b>graphe orienté</b>&nbsp;est un ensemble de nœuds et d'arcs entre ces nœuds.
+    </p>
+  </body>
+</html>
+
+</richcontent>
+</node>
+</node>
+<node TEXT="Application" ID="ID_1528468026" CREATED="1631477785066" MODIFIED="1631477790843"/>
 </node>
 </node>
 </map>
