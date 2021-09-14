@@ -148,7 +148,7 @@
 </node>
 </node>
 </node>
-<node TEXT="Bonnes pratiques des réseaux sociaux" FOLDED="true" POSITION="right" ID="ID_660827462" CREATED="1630869511516" MODIFIED="1631347631951">
+<node TEXT="Bonnes pratiques des réseaux sociaux" POSITION="right" ID="ID_660827462" CREATED="1630869511516" MODIFIED="1631347631951">
 <node TEXT="Vidéo 1 - myshadow" FOLDED="true" ID="ID_448870781" CREATED="1630871929521" MODIFIED="1630872320419" LINK="res/myshadow.mp4">
 <node TEXT="Question 1" ID="ID_891574768" CREATED="1630872400872" MODIFIED="1630872404709">
 <node ID="ID_828423448" CREATED="1630872405738" MODIFIED="1630872460319"><richcontent TYPE="NODE">
@@ -206,7 +206,7 @@
 <node TEXT="Définitions" ID="ID_1306578589" CREATED="1630872108547" MODIFIED="1630872151450">
 <node TEXT="e-réputation" ID="ID_1812547339" CREATED="1630872158996" MODIFIED="1630872163962"/>
 </node>
-<node TEXT="Bonnes pratiques" FOLDED="true" ID="ID_1375596584" CREATED="1630872173518" MODIFIED="1630872185231">
+<node TEXT="Bonnes pratiques" ID="ID_1375596584" CREATED="1630872173518" MODIFIED="1630872185231">
 <node TEXT="Sécuriser ses comptes" ID="ID_1056460891" CREATED="1630872186444" MODIFIED="1630872203788"/>
 <node TEXT="Méthodes d&apos;authentification" ID="ID_41727326" CREATED="1630872207080" MODIFIED="1630872218568"/>
 <node TEXT="Exemple de site sécurisé : Atrium" ID="ID_185067750" CREATED="1631477386639" MODIFIED="1631477398617">
@@ -241,7 +241,7 @@
 </node>
 </node>
 </node>
-<node TEXT="Graphes" POSITION="right" ID="ID_1345520194" CREATED="1631469948260" MODIFIED="1631473799906">
+<node TEXT="Graphes" FOLDED="true" POSITION="right" ID="ID_1345520194" CREATED="1631469948260" MODIFIED="1631473799906">
 <node TEXT="Unplugged" ID="ID_324193910" CREATED="1631477773857" MODIFIED="1631477784344"/>
 <node TEXT="Définitions" FOLDED="true" ID="ID_803782368" CREATED="1631477761508" MODIFIED="1631477768761">
 <node ID="ID_1580608746" CREATED="1631469996275" MODIFIED="1631470020398"><richcontent TYPE="NODE">
@@ -256,7 +256,6 @@
     </p>
   </body>
 </html>
-
 </richcontent>
 </node>
 <node ID="ID_609806376" CREATED="1631469996276" MODIFIED="1631470038023"><richcontent TYPE="NODE">
@@ -271,7 +270,6 @@
     </p>
   </body>
 </html>
-
 </richcontent>
 </node>
 <node ID="ID_1281369522" CREATED="1631469996276" MODIFIED="1631473799904"><richcontent TYPE="NODE">
@@ -286,7 +284,6 @@
     </p>
   </body>
 </html>
-
 </richcontent>
 </node>
 <node ID="ID_496812362" CREATED="1631469996276" MODIFIED="1631470050024"><richcontent TYPE="NODE">
@@ -301,7 +298,6 @@
     </p>
   </body>
 </html>
-
 </richcontent>
 </node>
 <node ID="ID_1424594138" CREATED="1631469996276" MODIFIED="1631470055322"><richcontent TYPE="NODE">
@@ -316,7 +312,6 @@
     </p>
   </body>
 </html>
-
 </richcontent>
 </node>
 </node>
