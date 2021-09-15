@@ -3,7 +3,7 @@
 <node TEXT="Réseaux sociaux" LOCALIZED_STYLE_REF="AutomaticLayout.level.root" FOLDED="false" ID="ID_1090958577" CREATED="1409300609620" MODIFIED="1630875847233">
 <hook NAME="accessories/plugins/AutomaticLayout.properties" VALUE="ALL"/>
 <font BOLD="true"/>
-<hook NAME="MapStyle" background="#f9f9f8" zoom="0.912">
+<hook NAME="MapStyle" background="#f9f9f8" zoom="1.614">
     <properties show_icon_for_attributes="true" edgeColorConfiguration="#808080ff,#ff0000ff,#0000ffff,#00ff00ff,#ff00ffff,#00ffffff,#7c0000ff,#00007cff,#007c00ff,#7c007cff,#007c7cff,#7c7c00ff" show_note_icons="true" fit_to_viewport="false"/>
 
 <map_styles>
@@ -148,7 +148,7 @@
 </node>
 </node>
 </node>
-<node TEXT="Bonnes pratiques des réseaux sociaux" POSITION="right" ID="ID_660827462" CREATED="1630869511516" MODIFIED="1631347631951">
+<node TEXT="Bonnes pratiques des réseaux sociaux" FOLDED="true" POSITION="right" ID="ID_660827462" CREATED="1630869511516" MODIFIED="1631347631951">
 <node TEXT="Vidéo 1 - myshadow" FOLDED="true" ID="ID_448870781" CREATED="1630871929521" MODIFIED="1630872320419" LINK="res/myshadow.mp4">
 <node TEXT="Question 1" ID="ID_891574768" CREATED="1630872400872" MODIFIED="1630872404709">
 <node ID="ID_828423448" CREATED="1630872405738" MODIFIED="1630872460319"><richcontent TYPE="NODE">
@@ -219,7 +219,7 @@
 <node TEXT="Recherche sur les réseaux sociaux existants" ID="ID_513389408" CREATED="1630880545626" MODIFIED="1630880557851">
 <node TEXT="Facebook, Copains d&apos;avant, Classmate, Twitter, Snapchat, TikTok, WhatsApp, Pinterest, Waze, LinkedIn, YouTube, Instagram, Strava" ID="ID_1237343445" CREATED="1631473894508" MODIFIED="1631473899497"/>
 </node>
-<node TEXT="Carte d&apos;identité" FOLDED="true" ID="ID_1381406120" CREATED="1631477523633" MODIFIED="1631477529330">
+<node TEXT="Carte d&apos;identité" ID="ID_1381406120" CREATED="1631477523633" MODIFIED="1631477529330">
 <node TEXT="URL" FOLDED="true" ID="ID_1002508161" CREATED="1630869075526" MODIFIED="1631347936182">
 <node TEXT="adresse internet" ID="ID_1687379197" CREATED="1631347960816" MODIFIED="1631347968876"/>
 </node>
