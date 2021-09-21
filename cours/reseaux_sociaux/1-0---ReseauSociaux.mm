@@ -3,7 +3,7 @@
 <node TEXT="Réseaux sociaux" LOCALIZED_STYLE_REF="AutomaticLayout.level.root" FOLDED="false" ID="ID_1090958577" CREATED="1409300609620" MODIFIED="1630875847233">
 <hook NAME="accessories/plugins/AutomaticLayout.properties" VALUE="ALL"/>
 <font BOLD="true"/>
-<hook NAME="MapStyle" background="#f9f9f8" zoom="1.614">
+<hook NAME="MapStyle" background="#f9f9f8" zoom="2.147">
     <properties show_icon_for_attributes="true" edgeColorConfiguration="#808080ff,#ff0000ff,#0000ffff,#00ff00ff,#ff00ffff,#00ffffff,#7c0000ff,#00007cff,#007c00ff,#7c007cff,#007c7cff,#7c7c00ff" show_note_icons="true" fit_to_viewport="false"/>
 
 <map_styles>
@@ -214,7 +214,7 @@
 </node>
 </node>
 </node>
-<node TEXT="Fiche identité" FOLDED="true" POSITION="right" ID="ID_577718557" CREATED="1630875877164" MODIFIED="1631347684128">
+<node TEXT="Fiche identité" POSITION="right" ID="ID_577718557" CREATED="1630875877164" MODIFIED="1631347684128">
 <node TEXT="Groupe de 2, poste informatique" ID="ID_1947374755" CREATED="1630880560531" MODIFIED="1630880568693"/>
 <node TEXT="Recherche sur les réseaux sociaux existants" ID="ID_513389408" CREATED="1630880545626" MODIFIED="1630880557851">
 <node TEXT="Facebook, Copains d&apos;avant, Classmate, Twitter, Snapchat, TikTok, WhatsApp, Pinterest, Waze, LinkedIn, YouTube, Instagram, Strava" ID="ID_1237343445" CREATED="1631473894508" MODIFIED="1631473899497"/>
@@ -230,8 +230,7 @@
 <node TEXT="Finalité" FOLDED="true" ID="ID_1256228040" CREATED="1630869075528" MODIFIED="1631347973337">
 <node TEXT="objectif, but du réseau social" ID="ID_1809281844" CREATED="1631348106062" MODIFIED="1631348113159"/>
 </node>
-<node TEXT="Modèle économique" ID="ID_1583399994" CREATED="1630869075535" MODIFIED="1631347984164"/>
-<node TEXT="Nombre d’abonnés" FOLDED="true" ID="ID_187032169" CREATED="1630869075528" MODIFIED="1631347950191">
+<node TEXT="Nombre d’utilisateurs actifs" FOLDED="true" ID="ID_187032169" CREATED="1630869075528" MODIFIED="1631781836454">
 <node TEXT="voir la différence entre abonnés actifs et abonnés inactifs" ID="ID_1865905658" CREATED="1631347953230" MODIFIED="1631347957291"/>
 </node>
 <node TEXT="Style graphique" FOLDED="true" ID="ID_305035630" CREATED="1631348052192" MODIFIED="1631348057739">
