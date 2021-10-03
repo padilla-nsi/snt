@@ -3,7 +3,7 @@
 <node TEXT="Réseaux sociaux" LOCALIZED_STYLE_REF="AutomaticLayout.level.root" FOLDED="false" ID="ID_1090958577" CREATED="1409300609620" MODIFIED="1630875847233">
 <hook NAME="accessories/plugins/AutomaticLayout.properties" VALUE="ALL"/>
 <font BOLD="true"/>
-<hook NAME="MapStyle" background="#f9f9f8" zoom="1.467">
+<hook NAME="MapStyle" background="#f9f9f8" zoom="0.912">
     <properties show_icon_for_attributes="true" edgeColorConfiguration="#808080ff,#ff0000ff,#0000ffff,#00ff00ff,#ff00ffff,#00ffffff,#7c0000ff,#00007cff,#007c00ff,#7c007cff,#007c7cff,#7c7c00ff" show_note_icons="true" fit_to_viewport="false"/>
 
 <map_styles>
@@ -214,7 +214,7 @@
 </node>
 </node>
 </node>
-<node TEXT="Fiche identité" FOLDED="true" POSITION="right" ID="ID_577718557" CREATED="1630875877164" MODIFIED="1631347684128">
+<node TEXT="Fiche identité" POSITION="right" ID="ID_577718557" CREATED="1630875877164" MODIFIED="1631347684128">
 <node TEXT="Groupe de 2, poste informatique" ID="ID_1947374755" CREATED="1630880560531" MODIFIED="1630880568693"/>
 <node TEXT="Recherche sur les réseaux sociaux existants" ID="ID_513389408" CREATED="1630880545626" MODIFIED="1630880557851">
 <node TEXT="Facebook, Copains d&apos;avant, Classmate, Twitter, Snapchat, TikTok, WhatsApp, Pinterest, Waze, LinkedIn, YouTube, Instagram, Strava" ID="ID_1237343445" CREATED="1631473894508" MODIFIED="1631473899497"/>
@@ -240,7 +240,7 @@
 </node>
 </node>
 </node>
-<node TEXT="Graphes" POSITION="right" ID="ID_1345520194" CREATED="1631469948260" MODIFIED="1631473799906">
+<node TEXT="Graphes" FOLDED="true" POSITION="right" ID="ID_1345520194" CREATED="1631469948260" MODIFIED="1631473799906">
 <node TEXT="Unplugged" ID="ID_324193910" CREATED="1631477773857" MODIFIED="1631477784344"/>
 <node TEXT="" ID="ID_1896352913" CREATED="1632301931219" MODIFIED="1632301931219"/>
 <node TEXT="Définitions" ID="ID_803782368" CREATED="1631477761508" MODIFIED="1631477768761">
@@ -298,7 +298,6 @@
     </p>
   </body>
 </html>
-
 </richcontent>
 </node>
 <node ID="ID_1424594138" CREATED="1631469996276" MODIFIED="1631470055322"><richcontent TYPE="NODE">
