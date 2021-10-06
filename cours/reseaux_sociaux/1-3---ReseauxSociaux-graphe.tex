@@ -91,6 +91,8 @@
     ]{astuce}{Astuce}{}
 %
 % activité
+
+\newcounter{counterCa}
 \newbreakabletheorem[
     small box style={draw=orangeamu!100,line width=2pt,fill=orangeamu!100,rounded corners,decoration=penciline, decorate},%
 	big box style={color=orangeamu!100,fill=orangeamu!5,thick,decoration={penciline},decorate},
@@ -98,7 +100,7 @@
     other edges={decoration=penciline,decorate,thick},%
     headfont={\color{white}\large\scshape\bfseries}
     ]{activite}{\adjustimage{height=1cm, valign=m}{/home/bouscadilla/Documents/Code/nbconvert/template/latex/pdf_solution/papier_eleve_investigation.png}%
-    Activité}{}%{counterCa}
+    Activité}{counterCa}
 %   
 %   environnement élève
 %
@@ -250,7 +252,7 @@
     \renewcommand{\LaTeX}{\textrm{\Oldlatex}}
     % Document parameters
     % Document title
-    \title{1-3---ReseauxSociaux-graphe-unplugged}
+    \title{1-3---ReseauxSociaux-graphe}
     
     
     
@@ -465,7 +467,7 @@
       citecolor=citecolor,
       }
     % Slightly bigger margins than the latex defaults
-    \geometry{a4paper,tmargin=3cm,bmargin=2cm,lmargin=1cm,rmargin=1cm}\fancyhead[L]{Thème à définir}\fancyhead[L]{\adjustimage{height=1cm, valign=m}{/home/bouscadilla/Documents/Code/nbconvert/template/latex/pdf_solution/papier_eleve_ico_reseausocial}}\fancyhead[C]{\bfseries\MakeUppercase{1-3---ReseauxSociaux-graphe-unplugged}}\fancyhead[C]{\bfseries\MakeUppercase{Réseaux Sociaux}}\fancyhead[R]{\monthyeardate\today}
+    \geometry{a4paper,tmargin=3cm,bmargin=2cm,lmargin=1cm,rmargin=1cm}\fancyhead[L]{Thème à définir}\fancyhead[L]{\adjustimage{height=1cm, valign=m}{/home/bouscadilla/Documents/Code/nbconvert/template/latex/pdf_solution/papier_eleve_ico_reseausocial}}\fancyhead[C]{\bfseries\MakeUppercase{1-3---ReseauxSociaux-graphe}}\fancyhead[C]{\bfseries\MakeUppercase{Réseaux Sociaux}}\fancyhead[R]{\monthyeardate\today}
 
     \fancyfoot[C]{\thepage}
     % #TODO ajouter les pages totales
@@ -483,90 +485,56 @@
     
 
     
-    \hypertarget{un-ruxe9seau-social}{%
-\subsection{Un réseau social}\label{un-ruxe9seau-social}}
+    \hypertarget{moduxe9lisation-par-des-graphes}{%
+\subsection{Modélisation par des
+graphes}\label{moduxe9lisation-par-des-graphes}}
 
-    \hypertarget{cruxe9ation-du-ruxe9seau}{%
-\subsubsection{Création du réseau}\label{cruxe9ation-du-ruxe9seau}}
-\begin{eleve}
-    \textbf{Travail seul} :
+    Les réseaux sociaux peuvent être modélisés par des \textbf{graphe}.
 
-\begin{itemize}
+Un graphe est composé de \textbf{sommets} et d'\textbf{arêtes}
+(ou~d'\textbf{arcs} si les lignes sont orientées) reliant certains de
+ces sommets.
+\begin{exemple}
+    Par exemple, voici deux graphes :
+
+\includegraphics{res/graphe1.png} \includegraphics{res/graphe2.png}
+
+        \end{exemple}\begin{eleve}
+    Pour le premier graphe de l'exemple :
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
 \tightlist
 \item
-  \textbf{écris} dans la partie supérieure du post-it ton prénom,
-\item
-  \textbf{dessine} une image de ton visage et
-\item
-  \textbf{écris} 3 mots sur toi-même.
-\end{itemize}
+  \textbf{Proposer} un sommet qui en soit le \textbf{centre}.
+\end{enumerate}
 
-\textbf{Travail par groupe de 6..8} :
+Pour le deuxième graphe :
 
-\begin{itemize}
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\setcounter{enumi}{1}
 \tightlist
 \item
-  \textbf{place} aléatoirement sur la grande feuille centrale ton
-  post-it,
+  \textbf{Compléter} le tableau ci-dessous puis \textbf{proposer} un
+  sommet qui en soit le centre.
 \item
-  à l'aide de marqueur, (1) \textbf{trace} des lignes qui te relient à
-  d'autres personnes \textbf{si} des mots expriment la même idée et (2)
-  \textbf{écris} au dessus de chaque ligne une étiquette d'un mot
-  expliquant ton choix.
-\end{itemize}
-        
-        \end{eleve}\begin{exemple}
-    Par exemple une ligne peut connecter deux personnes qui sont nées le
-même mois, qui ont des traits de caractères communs ou qui détestent la
-même matière, etc.
-
-        \end{exemple}\begin{remarque}
-    Les relations ne sont pas et ne doivent pas toutes être liées à l'école
-: recherchez des passe-temps, des préférences personnelles, des lieux de
-vacances, des équipes sportives, etc.
-
-        \end{remarque}
-    \hypertarget{analyse-du-ruxe9seau-cruxe9uxe9}{%
-\subsubsection{Analyse du réseau
-créé}\label{analyse-du-ruxe9seau-cruxe9uxe9}}
-\begin{eleve}
-    Maintenant que le réseau social est créé, il est temps de
-l'analyser\ldots{}
-
-\begin{itemize}
-\tightlist
-\item
-  \textbf{Compte} le nombre de connexions qui émergent de ton prénom.
-\item
-  \textbf{Fais} la liste des étiquettes qui relient ton post-it aux
-  autres élèves.
-\item
-  \textbf{Reproduis} le schéma réalisé par le groupe en le simplifiant :
-
-  \begin{itemize}
-  \tightlist
-  \item
-    remplace les prénoms par la première lettre,
-  \item
-    n'écris pas les étiquettes des connexions,
-  \item
-    dessine au maximum une seule connexion entre deux élèves, même s'il
-    y en a plus dans le schéma original.
-  \end{itemize}
-\end{itemize}
+  Que \textbf{remarquez}-vous à propos de ces deux graphes ?
+\end{enumerate}
         
         \end{eleve}\begin{reponse}
-    .
-
-.
-
-.
-
-.
-
-.
-
-.
+    \begin{longtable}[]{@{}lllllll@{}}
+\toprule
+distance de & A & B & C & D & E & Distance maximale\tabularnewline
+\midrule
+\endhead
+A & & & & & &\tabularnewline
+B & & & & & &\tabularnewline
+C & & & & & &\tabularnewline
+D & & & & & &\tabularnewline
+E & & & & & &\tabularnewline
+\bottomrule
+\end{longtable}
 
 .
 
@@ -575,54 +543,71 @@ l'analyser\ldots{}
 .
 
         \end{reponse}
-    Pour \textbf{modéliser} les relations d'un réseau social, on utilise un
-\textbf{graphe} :
-\begin{retenir}
-    \textbf{nœud} :
+    \hypertarget{pour-aller-plus-loin-httpspa.dilla.frw--}{%
+\subsection[Pour aller plus loin --- (\url{https://pa.dilla.fr/W}) -
+]{\texorpdfstring{Pour aller plus loin --- (\url{https://pa.dilla.fr/W})
+-
+\protect\includegraphics{res/qr_graphe.png}}{Pour aller plus loin --- (https://pa.dilla.fr/W) - }}\label{pour-aller-plus-loin-httpspa.dilla.frw--}}
 
-.
+    Il est possible de créer des graphes avec python. Pour cela, on peut
+utiliser la bibliothèque \texttt{networkx} qui permet aussi de
+déterminer le nombre de sommets et d'arêtes, le diamètre, le rayon et le
+centre d'un graphe.
 
-        \end{retenir}\begin{retenir}
-    \textbf{arête} :
+        {\scriptsize
+    \begin{tcolorbox}[breakable, size=fbox, boxrule=1pt, pad at break*=1mm,colback=cellbackground, colframe=cellborder]
+\prompt{In}{incolor}{ }{\boxspacing}
+\begin{Verbatim}[commandchars=\\\{\}]
+\PY{k+kn}{from} \PY{n+nn}{networkx} \PY{k+kn}{import} \PY{n}{nx}\PY{p}{,}\PY{n}{diameter}\PY{p}{,}\PY{n}{radius}\PY{p}{,}\PY{n}{center}
+\PY{k+kn}{import} \PY{n+nn}{matplotlib}\PY{n+nn}{.}\PY{n+nn}{pyplot} \PY{k}{as} \PY{n+nn}{plt}
 
-.
 
-        \end{retenir}\begin{retenir}
-    \textbf{arc} :
+\PY{c+c1}{\PYZsh{} Créer un nouveau graphe et l\PYZsq{}appeler `reseau\PYZus{}social`}
+\PY{n}{reseau\PYZus{}social}\PY{o}{=}\PY{n}{nx}\PY{o}{.}\PY{n}{Graph}\PY{p}{(}\PY{p}{)}
 
-.
+\PY{c+c1}{\PYZsh{} Ajouter les sommets}
+\PY{n}{reseau\PYZus{}social}\PY{o}{.}\PY{n}{add\PYZus{}node}\PY{p}{(}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{A}\PY{l+s+s1}{\PYZsq{}}\PY{p}{)}
+\PY{n}{reseau\PYZus{}social}\PY{o}{.}\PY{n}{add\PYZus{}node}\PY{p}{(}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{B}\PY{l+s+s1}{\PYZsq{}}\PY{p}{)}
+\PY{n}{reseau\PYZus{}social}\PY{o}{.}\PY{n}{add\PYZus{}node}\PY{p}{(}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{C}\PY{l+s+s1}{\PYZsq{}}\PY{p}{)}
+\PY{n}{reseau\PYZus{}social}\PY{o}{.}\PY{n}{add\PYZus{}node}\PY{p}{(}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{D}\PY{l+s+s1}{\PYZsq{}}\PY{p}{)}
+\PY{n}{reseau\PYZus{}social}\PY{o}{.}\PY{n}{add\PYZus{}node}\PY{p}{(}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{E}\PY{l+s+s1}{\PYZsq{}}\PY{p}{)}
 
-        \end{retenir}\begin{retenir}
-    Un \textbf{graphe non orienté} est
+\PY{c+c1}{\PYZsh{} Ajouter les arêtes}
+\PY{n}{reseau\PYZus{}social}\PY{o}{.}\PY{n}{add\PYZus{}edge}\PY{p}{(}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{A}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{E}\PY{l+s+s1}{\PYZsq{}}\PY{p}{)}
+\PY{n}{reseau\PYZus{}social}\PY{o}{.}\PY{n}{add\PYZus{}edge}\PY{p}{(}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{B}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{C}\PY{l+s+s1}{\PYZsq{}}\PY{p}{)}
+\PY{n}{reseau\PYZus{}social}\PY{o}{.}\PY{n}{add\PYZus{}edge}\PY{p}{(}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{B}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{E}\PY{l+s+s1}{\PYZsq{}}\PY{p}{)}
+\PY{n}{reseau\PYZus{}social}\PY{o}{.}\PY{n}{add\PYZus{}edge}\PY{p}{(}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{C}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{D}\PY{l+s+s1}{\PYZsq{}}\PY{p}{)}
+\PY{n}{reseau\PYZus{}social}\PY{o}{.}\PY{n}{add\PYZus{}edge}\PY{p}{(}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{C}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{E}\PY{l+s+s1}{\PYZsq{}}\PY{p}{)}
+\PY{n}{reseau\PYZus{}social}\PY{o}{.}\PY{n}{add\PYZus{}edge}\PY{p}{(}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{D}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{E}\PY{l+s+s1}{\PYZsq{}}\PY{p}{)}
 
-        \end{retenir}\begin{retenir}
-    Un \textbf{graphe orienté} est
+\PY{c+c1}{\PYZsh{} Afficher le graphe `reseau\PYZus{}social`}
+\PY{n}{nx}\PY{o}{.}\PY{n}{draw}\PY{p}{(}\PY{n}{reseau\PYZus{}social}\PY{p}{,} \PY{n}{with\PYZus{}labels}\PY{o}{=}\PY{k+kc}{True}\PY{p}{)}
+\PY{n}{plt}\PY{o}{.}\PY{n}{draw}\PY{p}{(}\PY{p}{)}
+\PY{n}{plt}\PY{o}{.}\PY{n}{show}\PY{p}{(}\PY{p}{)}
 
-        \end{retenir}\begin{eleve}
-    Détermine le personnage central du réseau social précédent.
+\PY{c+c1}{\PYZsh{} Afficher les mesures sur les graphes}
+\PY{n+nb}{print}\PY{p}{(}\PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{nombre de sommets=}\PY{l+s+s2}{\PYZdq{}}\PY{p}{,}\PY{n}{reseau\PYZus{}social}\PY{o}{.}\PY{n}{number\PYZus{}of\PYZus{}nodes}\PY{p}{(}\PY{p}{)}\PY{p}{)}
+\PY{n+nb}{print}\PY{p}{(}\PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{nombre de arêtes=}\PY{l+s+s2}{\PYZdq{}}\PY{p}{,}\PY{n}{reseau\PYZus{}social}\PY{o}{.}\PY{n}{number\PYZus{}of\PYZus{}edges}\PY{p}{(}\PY{p}{)}\PY{p}{)}
+\PY{n+nb}{print}\PY{p}{(}\PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{Diamètre=}\PY{l+s+s2}{\PYZdq{}}\PY{p}{,}\PY{n}{diameter}\PY{p}{(}\PY{n}{reseau\PYZus{}social}\PY{p}{)}\PY{p}{)}
+\PY{n+nb}{print}\PY{p}{(}\PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{Rayon=}\PY{l+s+s2}{\PYZdq{}}\PY{p}{,}\PY{n}{radius}\PY{p}{(}\PY{n}{reseau\PYZus{}social}\PY{p}{)}\PY{p}{)}
+\PY{n+nb}{print}\PY{p}{(}\PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{Centre=}\PY{l+s+s2}{\PYZdq{}}\PY{p}{,}\PY{n}{center}\PY{p}{(}\PY{n}{reseau\PYZus{}social}\PY{p}{)}\PY{p}{)}
+\end{Verbatim}
+\end{tcolorbox}
+    }
 
-Le dessin peut influencer ce que l'on perçoit. Pour déterminer le
-personnage central, on choisit celui dont tous les autres sont plus
-proches. Pour cela :
-
-\begin{itemize}
-\tightlist
-\item
-  Calcule pour chaque élève la distance la plus longue qui le sépare
-  d'un autre.
-\item
-  Détermine le ou les élèves pour lesquels cette distance est la plus
-  petite. L'élève est le \textbf{centre} et cette distance est le
-  \textbf{rayon} du réseau.
-\item
-  Détermine le \textbf{diamètre} du réseau, c'est-à-dire \emph{la
-  distance maximale entre deux élèves}.
-\item
-  Redessine le réseau en plaçant cette personne au milieu et les autres
-  autour d'elles.
-\end{itemize}
-        
-        \end{eleve}\begin{formule}
+    \begin{center}
+    \adjustimage{max size={0.9\linewidth}{0.9\paperheight}}{1-3---ReseauxSociaux-graphe_files/1-3---ReseauxSociaux-graphe_7_0.png}
+    \end{center}
+    { \hspace*{\fill} \\}
+    
+    \begin{Verbatim}[commandchars=\\\{\}]
+nombre de sommets= 5
+nombre de arêtes= 6
+Diamètre= 2
+Rayon= 1
+Centre= ['E']
+    \end{Verbatim}
+\begin{formule}
     .
 
 .

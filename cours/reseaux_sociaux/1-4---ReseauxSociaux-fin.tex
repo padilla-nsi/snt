@@ -39,7 +39,7 @@
 \definecolor{cyanamu}{RGB}{77,198,244}
 
 
-\usepackage{/home/bouscadilla/Documents/Code/nbconvert/template/latex/papier_eleve/xeboiboites}
+\usepackage{/home/bouscadilla/Documents/Code/nbconvert/template/latex/pdf_solution/xeboiboites}
 %
 % exemple
 \newbreakabletheorem[
@@ -70,21 +70,37 @@
         ]{reponse}{Correction}{}
 %
 
+%
+% À retenir
+%\newbreakabletheorem[
+%    small box style={fill=deepred!100, draw=deepred!80, line width=1pt,rounded corners,decorate},%
+%    big box style={fill=deepred!10,draw=deepred!50,thick,rounded corners,decorate},
+%    headfont={\color{white}\large\scshape\bfseries}
+%        ]{retenir}{À retenir}{}
+%
+\newboxedequation[%
+    big box style={fill=deepred!10,draw=deepred!0,thick,decoration=penciline,decorate}]%
+    {retenir}
+
+
+
 % astuce
 \newspanning[
-    image=fig-idee,headfont=\bfseries,
+    image=/home/bouscadilla/Documents/Code/nbconvert/template/latex/pdf_solution/fig-idee,headfont=\bfseries,
     spanning style={very thick,decoration=penciline,decorate}
     ]{astuce}{Astuce}{}
 %
 % activité
+
+\newcounter{counterCa}
 \newbreakabletheorem[
     small box style={draw=orangeamu!100,line width=2pt,fill=orangeamu!100,rounded corners,decoration=penciline, decorate},%
 	big box style={color=orangeamu!100,fill=orangeamu!5,thick,decoration={penciline},decorate},
     broken edges={draw=orangeamu!100,thick,fill=orangeamu!100, decoration={random steps, segment length=.5cm,amplitude=1.3mm},decorate},%
     other edges={decoration=penciline,decorate,thick},%
     headfont={\color{white}\large\scshape\bfseries}
-    ]{activite}{\adjustimage{height=1cm, valign=m}{/home/bouscadilla/Documents/Code/nbconvert/template/latex/papier_eleve/papier_eleve_investigation.png}%
-    Activité}{}%{counterCa}
+    ]{activite}{\adjustimage{height=1cm, valign=m}{/home/bouscadilla/Documents/Code/nbconvert/template/latex/pdf_solution/papier_eleve_investigation.png}%
+    Activité}{counterCa}
 %   
 %   environnement élève
 %
@@ -236,7 +252,7 @@
     \renewcommand{\LaTeX}{\textrm{\Oldlatex}}
     % Document parameters
     % Document title
-    \title{1-2---ReseauxSociaux-graphe}
+    \title{1-4---ReseauxSociaux-fin}
     
     
     
@@ -451,7 +467,7 @@
       citecolor=citecolor,
       }
     % Slightly bigger margins than the latex defaults
-    \geometry{a4paper,tmargin=3cm,bmargin=2cm,lmargin=1cm,rmargin=1cm}\fancyhead[L]{Thème à définir}\fancyhead[L]{\adjustimage{height=1cm, valign=m}{/home/bouscadilla/Documents/Code/nbconvert/template/latex/papier_eleve/papier_eleve_ico_reseausocial}}\fancyhead[C]{\bfseries\MakeUppercase{1-2---ReseauxSociaux-graphe}}\fancyhead[C]{\bfseries\MakeUppercase{Réseaux Sociaux}}\fancyhead[R]{\monthyeardate\today}
+    \geometry{a4paper,tmargin=3cm,bmargin=2cm,lmargin=1cm,rmargin=1cm}\fancyhead[L]{Thème à définir}\fancyhead[L]{\adjustimage{height=1cm, valign=m}{/home/bouscadilla/Documents/Code/nbconvert/template/latex/pdf_solution/papier_eleve_ico_reseausocial}}\fancyhead[C]{\bfseries\MakeUppercase{1-4---ReseauxSociaux-fin}}\fancyhead[C]{\bfseries\MakeUppercase{Réseaux Sociaux}}\fancyhead[R]{\monthyeardate\today}
 
     \fancyfoot[C]{\thepage}
     % #TODO ajouter les pages totales
@@ -469,128 +485,115 @@
     
 
     
-    \hypertarget{moduxe9lisation-par-des-graphes}{%
-\subsection{Modélisation par des
-graphes}\label{moduxe9lisation-par-des-graphes}}
+    \hypertarget{repruxe9sentation-informatique}{%
+\subsection{Représentation
+informatique}\label{repruxe9sentation-informatique}}
 
-    Les réseaux sociaux peuvent être modélisés par des \textbf{graphe}.
+    Un réseau social peut être modélisé à l'aide d'un graphe que l'on peut
+représenter graphiquement.
 
-Un graphe est composé de \textbf{sommets} et d'\textbf{arêtes}
-(ou~\emph{arcs}) reliant certains de ces sommets.
-\begin{exemple}
-    Par exemple, voici deux graphes :
+Pour manipuler un graphe avec un ordinateur, il faut choisir une
+représentation informatique.
+\begin{retenir}
+    \textbf{Tableau d'adjacence :}
 
-\includegraphics{res/graphe1.png} \includegraphics{res/graphe2.png}
+.
 
-            \end{exemple}\begin{eleve}
-    Pour le premier graphe de l'exemple :
+.
 
-\begin{enumerate}
-\def\labelenumi{\arabic{enumi}.}
-\tightlist
-\item
-  \textbf{Proposer} un sommet qui en soit le \textbf{centre}.
-\end{enumerate}
-
-Pour le deuxième graphe :
-
-\begin{enumerate}
-\def\labelenumi{\arabic{enumi}.}
-\setcounter{enumi}{1}
-\tightlist
-\item
-  \textbf{Compléter} le tableau ci-dessous puis \textbf{proposer} un
-  sommet qui en soit le centre.
-\item
-  Que \textbf{remarquez}-vous à propos de ces deux graphes ?
-\end{enumerate}
-        
-        \end{eleve}\begin{reponse}
-    \begin{longtable}[]{@{}lllllll@{}}
+        \end{retenir}
+    \begin{longtable}[]{@{}lcccccc@{}}
 \toprule
-distance de & A & B & C & D & E & Distance maximale\tabularnewline
+\ldots\ldots.. & Asma & Bob & Chloé & Dylan & Emma &
+Farez\tabularnewline
 \midrule
 \endhead
-A & & & & & &\tabularnewline
-B & & & & & &\tabularnewline
-C & & & & & &\tabularnewline
-D & & & & & &\tabularnewline
-E & & & & & &\tabularnewline
+Asma & & X & & & &\tabularnewline
+Bob & X & & X & & X & X\tabularnewline
+Chloé & & X & & & & X\tabularnewline
+Dylan & & & & & X &\tabularnewline
+Emma & & X & & X & & X\tabularnewline
+Farez & & X & X & & X &\tabularnewline
 \bottomrule
 \end{longtable}
+\begin{eleve}
+    Indique le nombre et les prénoms des amis de Farez.
+        
+        \end{eleve}\begin{reponse}
+    .
 
 .
 
 .
 
+        \end{reponse}
+    En informatique, un tableau d'adjacence peut se coder avec des
+\texttt{0} et des \texttt{1}. Ce qui donne :
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{amis  }\OperatorTok{=}\NormalTok{  [[}\DecValTok{0}\NormalTok{,}\DecValTok{1}\NormalTok{,}\DecValTok{0}\NormalTok{,}\DecValTok{0}\NormalTok{,}\DecValTok{0}\NormalTok{,}\DecValTok{0}\NormalTok{], [}\DecValTok{1}\NormalTok{,}\DecValTok{0}\NormalTok{,}\DecValTok{1}\NormalTok{,}\DecValTok{0}\NormalTok{,}\DecValTok{1}\NormalTok{,}\DecValTok{1}\NormalTok{], [}\DecValTok{0}\NormalTok{,}\DecValTok{1}\NormalTok{,}\DecValTok{0}\NormalTok{,}\DecValTok{0}\NormalTok{,}\DecValTok{0}\NormalTok{,}\DecValTok{1}\NormalTok{],}
+\NormalTok{[}\DecValTok{0}\NormalTok{,}\DecValTok{0}\NormalTok{,}\DecValTok{0}\NormalTok{,}\DecValTok{0}\NormalTok{,}\DecValTok{1}\NormalTok{,}\DecValTok{0}\NormalTok{], [}\DecValTok{0}\NormalTok{,}\DecValTok{1}\NormalTok{,}\DecValTok{0}\NormalTok{,}\DecValTok{1}\NormalTok{,}\DecValTok{0}\NormalTok{,}\DecValTok{1}\NormalTok{], [}\DecValTok{0}\NormalTok{,}\DecValTok{1}\NormalTok{,}\DecValTok{1}\NormalTok{,}\DecValTok{0}\NormalTok{,}\DecValTok{1}\NormalTok{,}\DecValTok{0}\NormalTok{]]}
+\end{Highlighting}
+\end{Shaded}
+
+Ou la même affectation mais plus lisible :
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{amis  }\OperatorTok{=}\NormalTok{  [[}\DecValTok{0}\NormalTok{,}\DecValTok{1}\NormalTok{,}\DecValTok{0}\NormalTok{,}\DecValTok{0}\NormalTok{,}\DecValTok{0}\NormalTok{,}\DecValTok{0}\NormalTok{],}
+\NormalTok{          [}\DecValTok{1}\NormalTok{,}\DecValTok{0}\NormalTok{,}\DecValTok{1}\NormalTok{,}\DecValTok{0}\NormalTok{,}\DecValTok{1}\NormalTok{,}\DecValTok{1}\NormalTok{],}
+\NormalTok{          [}\DecValTok{0}\NormalTok{,}\DecValTok{1}\NormalTok{,}\DecValTok{0}\NormalTok{,}\DecValTok{0}\NormalTok{,}\DecValTok{0}\NormalTok{,}\DecValTok{1}\NormalTok{],}
+\NormalTok{          [}\DecValTok{0}\NormalTok{,}\DecValTok{0}\NormalTok{,}\DecValTok{0}\NormalTok{,}\DecValTok{0}\NormalTok{,}\DecValTok{1}\NormalTok{,}\DecValTok{0}\NormalTok{],}
+\NormalTok{          [}\DecValTok{0}\NormalTok{,}\DecValTok{1}\NormalTok{,}\DecValTok{0}\NormalTok{,}\DecValTok{1}\NormalTok{,}\DecValTok{0}\NormalTok{,}\DecValTok{1}\NormalTok{],}
+\NormalTok{          [}\DecValTok{0}\NormalTok{,}\DecValTok{1}\NormalTok{,}\DecValTok{1}\NormalTok{,}\DecValTok{0}\NormalTok{,}\DecValTok{1}\NormalTok{,}\DecValTok{0}\NormalTok{]]}
+\end{Highlighting}
+\end{Shaded}
+\begin{retenir}
+    \emph{Pour la suite}, \textbf{connecte toi} avec tes identifiants Atrium
+au site \href{https://pa.dilla.fr/1b}{pa.dilla.fr/1b} puis
+\textbf{saisis} le code \texttt{0f37-92107} pour accéder à la version
+numérique de l'activité.
+
+        \end{retenir}\begin{eleve}
+    Pour chacun des 5 graphes ci-dessous :
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  Sur la feuille, \textbf{écris} à coté du graphe son tableau
+  d'adjacence.
+\item
+  Sur l'ordinateur, \textbf{modifie} le code puis \textbf{exécute} la
+  cellule
+\item
+  \textbf{Vérifie} si la représentation affichée est correcte.
+\end{enumerate}
+
+\includegraphics{res/graph1.png}
+
 .
 
-            \end{reponse}
-    \hypertarget{pour-aller-plus-loin-httpspa.dilla.frw--}{%
-\subsection[Pour aller plus loin --- (\url{https://pa.dilla.fr/W}) -
-]{\texorpdfstring{Pour aller plus loin --- (\url{https://pa.dilla.fr/W})
--
-\protect\includegraphics{res/qr_graphe.png}}{Pour aller plus loin --- (https://pa.dilla.fr/W) - }}\label{pour-aller-plus-loin-httpspa.dilla.frw--}}
+\includegraphics{res/graph2.png}
 
-    Il est possible de créer des graphes avec python. Pour cela, on peut
-utiliser la bibliothèque \texttt{networkx} qui permet aussi de
-déterminer le nombre de sommets et d'arêtes, le diamètre, le rayon et le
-centre d'un graphe.
+.
 
-        {\scriptsize
-    \begin{tcolorbox}[breakable, size=fbox, boxrule=1pt, pad at break*=1mm,colback=cellbackground, colframe=cellborder]
-\prompt{In}{incolor}{ }{\boxspacing}
-\begin{Verbatim}[commandchars=\\\{\}]
-\PY{k+kn}{from} \PY{n+nn}{networkx} \PY{k+kn}{import} \PY{n}{nx}\PY{p}{,}\PY{n}{diameter}\PY{p}{,}\PY{n}{radius}\PY{p}{,}\PY{n}{center}
-\PY{k+kn}{import} \PY{n+nn}{matplotlib}\PY{n+nn}{.}\PY{n+nn}{pyplot} \PY{k}{as} \PY{n+nn}{plt}
+.
 
+\includegraphics{res/graph3.png}
 
-\PY{c+c1}{\PYZsh{} Créer un nouveau graphe et l\PYZsq{}appeler `reseau\PYZus{}social`}
-\PY{n}{reseau\PYZus{}social}\PY{o}{=}\PY{n}{nx}\PY{o}{.}\PY{n}{Graph}\PY{p}{(}\PY{p}{)}
+.
 
-\PY{c+c1}{\PYZsh{} Ajouter les sommets}
-\PY{n}{reseau\PYZus{}social}\PY{o}{.}\PY{n}{add\PYZus{}node}\PY{p}{(}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{A}\PY{l+s+s1}{\PYZsq{}}\PY{p}{)}
-\PY{n}{reseau\PYZus{}social}\PY{o}{.}\PY{n}{add\PYZus{}node}\PY{p}{(}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{B}\PY{l+s+s1}{\PYZsq{}}\PY{p}{)}
-\PY{n}{reseau\PYZus{}social}\PY{o}{.}\PY{n}{add\PYZus{}node}\PY{p}{(}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{C}\PY{l+s+s1}{\PYZsq{}}\PY{p}{)}
-\PY{n}{reseau\PYZus{}social}\PY{o}{.}\PY{n}{add\PYZus{}node}\PY{p}{(}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{D}\PY{l+s+s1}{\PYZsq{}}\PY{p}{)}
-\PY{n}{reseau\PYZus{}social}\PY{o}{.}\PY{n}{add\PYZus{}node}\PY{p}{(}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{E}\PY{l+s+s1}{\PYZsq{}}\PY{p}{)}
+.
 
-\PY{c+c1}{\PYZsh{} Ajouter les arêtes}
-\PY{n}{reseau\PYZus{}social}\PY{o}{.}\PY{n}{add\PYZus{}edge}\PY{p}{(}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{A}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{E}\PY{l+s+s1}{\PYZsq{}}\PY{p}{)}
-\PY{n}{reseau\PYZus{}social}\PY{o}{.}\PY{n}{add\PYZus{}edge}\PY{p}{(}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{B}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{C}\PY{l+s+s1}{\PYZsq{}}\PY{p}{)}
-\PY{n}{reseau\PYZus{}social}\PY{o}{.}\PY{n}{add\PYZus{}edge}\PY{p}{(}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{B}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{E}\PY{l+s+s1}{\PYZsq{}}\PY{p}{)}
-\PY{n}{reseau\PYZus{}social}\PY{o}{.}\PY{n}{add\PYZus{}edge}\PY{p}{(}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{C}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{D}\PY{l+s+s1}{\PYZsq{}}\PY{p}{)}
-\PY{n}{reseau\PYZus{}social}\PY{o}{.}\PY{n}{add\PYZus{}edge}\PY{p}{(}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{C}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{E}\PY{l+s+s1}{\PYZsq{}}\PY{p}{)}
-\PY{n}{reseau\PYZus{}social}\PY{o}{.}\PY{n}{add\PYZus{}edge}\PY{p}{(}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{D}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{E}\PY{l+s+s1}{\PYZsq{}}\PY{p}{)}
+\includegraphics{res/graph4.png}
 
-\PY{c+c1}{\PYZsh{} Afficher le graphe `reseau\PYZus{}social`}
-\PY{n}{nx}\PY{o}{.}\PY{n}{draw}\PY{p}{(}\PY{n}{reseau\PYZus{}social}\PY{p}{,} \PY{n}{with\PYZus{}labels}\PY{o}{=}\PY{k+kc}{True}\PY{p}{)}
-\PY{n}{plt}\PY{o}{.}\PY{n}{draw}\PY{p}{(}\PY{p}{)}
-\PY{n}{plt}\PY{o}{.}\PY{n}{show}\PY{p}{(}\PY{p}{)}
+.
 
-\PY{c+c1}{\PYZsh{} Afficher les mesures sur les graphes}
-\PY{n+nb}{print}\PY{p}{(}\PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{nombre de sommets=}\PY{l+s+s2}{\PYZdq{}}\PY{p}{,}\PY{n}{reseau\PYZus{}social}\PY{o}{.}\PY{n}{number\PYZus{}of\PYZus{}nodes}\PY{p}{(}\PY{p}{)}\PY{p}{)}
-\PY{n+nb}{print}\PY{p}{(}\PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{nombre de arêtes=}\PY{l+s+s2}{\PYZdq{}}\PY{p}{,}\PY{n}{reseau\PYZus{}social}\PY{o}{.}\PY{n}{number\PYZus{}of\PYZus{}edges}\PY{p}{(}\PY{p}{)}\PY{p}{)}
-\PY{n+nb}{print}\PY{p}{(}\PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{Diamètre=}\PY{l+s+s2}{\PYZdq{}}\PY{p}{,}\PY{n}{diameter}\PY{p}{(}\PY{n}{reseau\PYZus{}social}\PY{p}{)}\PY{p}{)}
-\PY{n+nb}{print}\PY{p}{(}\PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{Rayon=}\PY{l+s+s2}{\PYZdq{}}\PY{p}{,}\PY{n}{radius}\PY{p}{(}\PY{n}{reseau\PYZus{}social}\PY{p}{)}\PY{p}{)}
-\PY{n+nb}{print}\PY{p}{(}\PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{Centre=}\PY{l+s+s2}{\PYZdq{}}\PY{p}{,}\PY{n}{center}\PY{p}{(}\PY{n}{reseau\PYZus{}social}\PY{p}{)}\PY{p}{)}
-\end{Verbatim}
-\end{tcolorbox}
-    }
-
-    \begin{center}
-    \adjustimage{max size={0.9\linewidth}{0.9\paperheight}}{1-2---ReseauxSociaux-graphe_files/1-2---ReseauxSociaux-graphe_7_0.png}
-    \end{center}
-    { \hspace*{\fill} \\}
-    
-    \begin{Verbatim}[commandchars=\\\{\}]
-nombre de sommets= 5
-nombre de arêtes= 6
-Diamètre= 2
-Rayon= 1
-Centre= ['E']
-    \end{Verbatim}
-\begin{formule}
+\includegraphics{res/graph5.png}
+        
+        \end{eleve}\begin{formule}
     .
 
 .
@@ -643,7 +646,7 @@ CAHIER}\label{page-uxe0-coller-sur-le-cahier-2}}
 
 .
 
-            \end{formule}
+        \end{formule}
 
     % Add a bibliography block to the postdoc
     

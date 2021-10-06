@@ -1,4 +1,4 @@
-<map version="freeplane 1.9.0">
+<map version="freeplane 1.9.8">
 <!--To view this file, download free mind mapping software Freeplane from http://freeplane.sourceforge.net -->
 <node TEXT="Réseaux sociaux" LOCALIZED_STYLE_REF="AutomaticLayout.level.root" FOLDED="false" ID="ID_1090958577" CREATED="1409300609620" MODIFIED="1630875847233">
 <hook NAME="accessories/plugins/AutomaticLayout.properties" VALUE="ALL"/>
@@ -31,7 +31,7 @@
 <edge STYLE="hide_edge"/>
 <cloud COLOR="#f0f0f0" SHAPE="ROUND_RECT"/>
 </stylenode>
-<stylenode LOCALIZED_TEXT="defaultstyle.selection" COLOR="#eceff4" BACKGROUND_COLOR="#bf616a" STYLE="bubble" BORDER_COLOR_LIKE_EDGE="false" BORDER_COLOR="#bf616a"/>
+<stylenode LOCALIZED_TEXT="defaultstyle.selection" COLOR="#eceff4" BACKGROUND_COLOR="#bf616a" BORDER_COLOR_LIKE_EDGE="false" BORDER_COLOR="#bf616a"/>
 </stylenode>
 <stylenode LOCALIZED_TEXT="styles.user-defined" POSITION="right" STYLE="bubble">
 <stylenode LOCALIZED_TEXT="styles.important" ID="ID_915433779" BORDER_COLOR="#bf616a">
@@ -214,7 +214,7 @@
 </node>
 </node>
 </node>
-<node TEXT="Fiche identité" POSITION="right" ID="ID_577718557" CREATED="1630875877164" MODIFIED="1631347684128">
+<node TEXT="Fiche identité et poster A3" FOLDED="true" POSITION="right" ID="ID_577718557" CREATED="1630875877164" MODIFIED="1633504066919">
 <node TEXT="Groupe de 2, poste informatique" ID="ID_1947374755" CREATED="1630880560531" MODIFIED="1630880568693"/>
 <node TEXT="Recherche sur les réseaux sociaux existants" ID="ID_513389408" CREATED="1630880545626" MODIFIED="1630880557851">
 <node TEXT="Facebook, Copains d&apos;avant, Classmate, Twitter, Snapchat, TikTok, WhatsApp, Pinterest, Waze, LinkedIn, YouTube, Instagram, Strava" ID="ID_1237343445" CREATED="1631473894508" MODIFIED="1631473899497"/>
@@ -240,9 +240,8 @@
 </node>
 </node>
 </node>
-<node TEXT="Graphes" FOLDED="true" POSITION="right" ID="ID_1345520194" CREATED="1631469948260" MODIFIED="1631473799906">
-<node TEXT="Unplugged" ID="ID_324193910" CREATED="1631477773857" MODIFIED="1631477784344"/>
-<node TEXT="" ID="ID_1896352913" CREATED="1632301931219" MODIFIED="1632301931219"/>
+<node TEXT="Graphes" POSITION="right" ID="ID_1345520194" CREATED="1631469948260" MODIFIED="1631473799906">
+<node TEXT="Activité Unplugged" ID="ID_324193910" CREATED="1631477773857" MODIFIED="1633504078983"/>
 <node TEXT="Définitions" ID="ID_803782368" CREATED="1631477761508" MODIFIED="1631477768761">
 <node ID="ID_1580608746" CREATED="1631469996275" MODIFIED="1631470020398"><richcontent TYPE="NODE">
 
@@ -315,7 +314,23 @@
 </richcontent>
 </node>
 </node>
-<node TEXT="Application" ID="ID_1528468026" CREATED="1631477785066" MODIFIED="1631477790843"/>
+<node TEXT="Centre / Rayon / Diamètre" ID="ID_582906682" CREATED="1633504080306" MODIFIED="1633504087823"/>
+<node TEXT="Représentation informatique" ID="ID_1528468026" CREATED="1631477785066" MODIFIED="1633504097415">
+<node ID="ID_1397405546" CREATED="1633504098100" MODIFIED="1633504935546"><richcontent TYPE="NODE">
+
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      <b>Tableau d'adjacence :</b>&nbsp;tableau à double entrée, dans lequel une case est cochée s'il y a un arc du nœud ligne vers le nœud colonne.
+    </p>
+  </body>
+</html>
+</richcontent>
+</node>
+</node>
 </node>
 </node>
 </map>
