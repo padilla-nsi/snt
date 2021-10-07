@@ -252,7 +252,7 @@
     \renewcommand{\LaTeX}{\textrm{\Oldlatex}}
     % Document parameters
     % Document title
-    \title{1-4---ReseauxSociaux-fin}
+    \title{1-1---iot}
     
     
     
@@ -467,7 +467,7 @@
       citecolor=citecolor,
       }
     % Slightly bigger margins than the latex defaults
-    \geometry{a4paper,tmargin=3cm,bmargin=2cm,lmargin=1cm,rmargin=1cm}\fancyhead[L]{Thème à définir}\fancyhead[L]{\adjustimage{height=1cm, valign=m}{/home/bouscadilla/Documents/Code/nbconvert/template/latex/pdf_solution/papier_eleve_ico_reseausocial}}\fancyhead[C]{\bfseries\MakeUppercase{1-4---ReseauxSociaux-fin}}\fancyhead[C]{\bfseries\MakeUppercase{Réseaux Sociaux}}\fancyhead[R]{\monthyeardate\today}
+    \geometry{a4paper,tmargin=3cm,bmargin=2cm,lmargin=1cm,rmargin=1cm}\fancyhead[L]{Thème à définir}\fancyhead[L]{\adjustimage{height=1cm, valign=m}{/home/bouscadilla/Documents/Code/nbconvert/template/latex/pdf_solution/papier_eleve_ico_iot}}\fancyhead[C]{\bfseries\MakeUppercase{1-1---iot}}\fancyhead[C]{\bfseries\MakeUppercase{Objets connectés}}\fancyhead[R]{\monthyeardate\today}
 
     \fancyfoot[C]{\thepage}
     % #TODO ajouter les pages totales
@@ -478,130 +478,178 @@
 
 \begin{document}
     
-    \title{Réseaux Sociaux}
+    \title{Objets connectés}
 % \maketitle
 
     
     
 
     
-    \hypertarget{repruxe9sentation-informatique}{%
-\subsection{Représentation
-informatique}\label{repruxe9sentation-informatique}}
+    \hypertarget{chap.-2-les-objets-connectuxe9s}{%
+\section{Chap. 2 --- Les objets
+connectés}\label{chap.-2-les-objets-connectuxe9s}}
 
-    Un réseau social peut être modélisé à l'aide d'un graphe que l'on peut
-représenter graphiquement.
+    \hypertarget{architecture-dun-systuxe8me-embarquuxe9}{%
+\subsection{2.1 --- Architecture d'un système
+embarqué}\label{architecture-dun-systuxe8me-embarquuxe9}}
+\begin{eleve}
+    Tu as a ta disposition une carte \(\texttt{Micro:bit}\). Répondre aux
+questions suivantes concernant la carte.
 
-Pour manipuler un graphe avec un ordinateur, il faut choisir une
-représentation informatique.
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  \textbf{Observe} la carte et \textbf{énumère} les différents
+  constituants de la carte \(\texttt{Micro:bit}\).
+\item
+  \textbf{Indique} le rôle de chacun.
+\item
+  \textbf{D'après toi}, à quoi sert le composant \emph{Processor}? que
+  contient-il ?
+\end{enumerate}
+        
+        \end{eleve}\begin{remarque}
+    Un \textbf{système informatique embarqué} à bord d'un satellite, d'une
+voiture ou d'un congélateur est un \textbf{ordinateur} comme les autres,
+avec son processeur et sa mémoire.
+
+        \end{remarque}
+    \begin{figure}
+\centering
+\includegraphics{res/archi-von-neumann.png}
+\caption{légende}
+\end{figure}
 \begin{retenir}
-    \textbf{Tableau d'adjacence :}
+    \textbf{Capteur} :
+
+.
+
+.
+
+        \end{retenir}\begin{retenir}
+    \textbf{Actionneur} :
+
+.
+
+.
+
+        \end{retenir}\begin{exemple}
+    \begin{longtable}[]{@{}ll@{}}
+\toprule
+\begin{minipage}[b]{0.47\columnwidth}\raggedright
+\textbf{capteurs}\strut
+\end{minipage} & \begin{minipage}[b]{0.47\columnwidth}\raggedright
+\textbf{actionneurs}\strut
+\end{minipage}\tabularnewline
+\midrule
+\endhead
+\begin{minipage}[t]{0.47\columnwidth}\raggedright
+capteur de température, pression, vitesse, interrupteur, etc.\strut
+\end{minipage} & \begin{minipage}[t]{0.47\columnwidth}\raggedright
+vanne, électro-aimant, moteur, vérin, LED, etc.\strut
+\end{minipage}\tabularnewline
+\begin{minipage}[t]{0.47\columnwidth}\raggedright
+\strut
+\end{minipage} & \begin{minipage}[t]{0.47\columnwidth}\raggedright
+\strut
+\end{minipage}\tabularnewline
+\begin{minipage}[t]{0.47\columnwidth}\raggedright
+\strut
+\end{minipage} & \begin{minipage}[t]{0.47\columnwidth}\raggedright
+\strut
+\end{minipage}\tabularnewline
+\begin{minipage}[t]{0.47\columnwidth}\raggedright
+\strut
+\end{minipage} & \begin{minipage}[t]{0.47\columnwidth}\raggedright
+\strut
+\end{minipage}\tabularnewline
+\begin{minipage}[t]{0.47\columnwidth}\raggedright
+\strut
+\end{minipage} & \begin{minipage}[t]{0.47\columnwidth}\raggedright
+\strut
+\end{minipage}\tabularnewline
+\begin{minipage}[t]{0.47\columnwidth}\raggedright
+\strut
+\end{minipage} & \begin{minipage}[t]{0.47\columnwidth}\raggedright
+\strut
+\end{minipage}\tabularnewline
+\begin{minipage}[t]{0.47\columnwidth}\raggedright
+\strut
+\end{minipage} & \begin{minipage}[t]{0.47\columnwidth}\raggedright
+\strut
+\end{minipage}\tabularnewline
+\bottomrule
+\end{longtable}
+
+        \end{exemple}\begin{retenir}
+    Un régulateur de vitesse dans une voiture est un \textbf{système
+informatique de contrôle} :
+
+.
+
+.
+
+.
+
+.
 
 .
 
 .
 
         \end{retenir}
-    \begin{longtable}[]{@{}lcccccc@{}}
-\toprule
-\ldots\ldots.. & Asma & Bob & Chloé & Dylan & Emma &
-Farez\tabularnewline
-\midrule
-\endhead
-Asma & & X & & & &\tabularnewline
-Bob & X & & X & & X & X\tabularnewline
-Chloé & & X & & & & X\tabularnewline
-Dylan & & & & & X &\tabularnewline
-Emma & & X & & X & & X\tabularnewline
-Farez & & X & X & & X &\tabularnewline
-\bottomrule
-\end{longtable}
+    \hypertarget{programmation-dun-systuxe8me-embarquuxe9}{%
+\subsection{2.2 --- Programmation d'un système
+embarqué}\label{programmation-dun-systuxe8me-embarquuxe9}}
 \begin{eleve}
-    Indique le nombre et les prénoms des amis de Farez.
-        
-        \end{eleve}\begin{reponse}
-    .
-
-.
-
-.
-
-        \end{reponse}
-    En informatique, un tableau d'adjacence peut se coder avec des
-\texttt{0} et des \texttt{1}. Ce qui donne :
+    \textbf{D'après toi}, que fait le programme ci-dessous ?
 
 \begin{Shaded}
 \begin{Highlighting}[]
-\NormalTok{amis  }\OperatorTok{=}\NormalTok{  [[}\DecValTok{0}\NormalTok{,}\DecValTok{1}\NormalTok{,}\DecValTok{0}\NormalTok{,}\DecValTok{0}\NormalTok{,}\DecValTok{0}\NormalTok{,}\DecValTok{0}\NormalTok{], [}\DecValTok{1}\NormalTok{,}\DecValTok{0}\NormalTok{,}\DecValTok{1}\NormalTok{,}\DecValTok{0}\NormalTok{,}\DecValTok{1}\NormalTok{,}\DecValTok{1}\NormalTok{], [}\DecValTok{0}\NormalTok{,}\DecValTok{1}\NormalTok{,}\DecValTok{0}\NormalTok{,}\DecValTok{0}\NormalTok{,}\DecValTok{0}\NormalTok{,}\DecValTok{1}\NormalTok{],}
-\NormalTok{[}\DecValTok{0}\NormalTok{,}\DecValTok{0}\NormalTok{,}\DecValTok{0}\NormalTok{,}\DecValTok{0}\NormalTok{,}\DecValTok{1}\NormalTok{,}\DecValTok{0}\NormalTok{], [}\DecValTok{0}\NormalTok{,}\DecValTok{1}\NormalTok{,}\DecValTok{0}\NormalTok{,}\DecValTok{1}\NormalTok{,}\DecValTok{0}\NormalTok{,}\DecValTok{1}\NormalTok{], [}\DecValTok{0}\NormalTok{,}\DecValTok{1}\NormalTok{,}\DecValTok{1}\NormalTok{,}\DecValTok{0}\NormalTok{,}\DecValTok{1}\NormalTok{,}\DecValTok{0}\NormalTok{]]}
+\ImportTok{from}\NormalTok{ microbit }\ImportTok{import} \OperatorTok{*}
+\NormalTok{e0 }\OperatorTok{=}\NormalTok{ button\_a.is\_pressed()}
+\ControlFlowTok{if}\NormalTok{ e0:}
+\NormalTok{    display.show(}\StringTok{"1"}\NormalTok{)}
+\ControlFlowTok{else}\NormalTok{:}
+\NormalTok{    display.show(}\StringTok{"0"}\NormalTok{)}
 \end{Highlighting}
 \end{Shaded}
 
-Ou la même affectation mais plus lisible :
-
-\begin{Shaded}
-\begin{Highlighting}[]
-\NormalTok{amis  }\OperatorTok{=}\NormalTok{  [[}\DecValTok{0}\NormalTok{,}\DecValTok{1}\NormalTok{,}\DecValTok{0}\NormalTok{,}\DecValTok{0}\NormalTok{,}\DecValTok{0}\NormalTok{,}\DecValTok{0}\NormalTok{],}
-\NormalTok{          [}\DecValTok{1}\NormalTok{,}\DecValTok{0}\NormalTok{,}\DecValTok{1}\NormalTok{,}\DecValTok{0}\NormalTok{,}\DecValTok{1}\NormalTok{,}\DecValTok{1}\NormalTok{],}
-\NormalTok{          [}\DecValTok{0}\NormalTok{,}\DecValTok{1}\NormalTok{,}\DecValTok{0}\NormalTok{,}\DecValTok{0}\NormalTok{,}\DecValTok{0}\NormalTok{,}\DecValTok{1}\NormalTok{],}
-\NormalTok{          [}\DecValTok{0}\NormalTok{,}\DecValTok{0}\NormalTok{,}\DecValTok{0}\NormalTok{,}\DecValTok{0}\NormalTok{,}\DecValTok{1}\NormalTok{,}\DecValTok{0}\NormalTok{],}
-\NormalTok{          [}\DecValTok{0}\NormalTok{,}\DecValTok{1}\NormalTok{,}\DecValTok{0}\NormalTok{,}\DecValTok{1}\NormalTok{,}\DecValTok{0}\NormalTok{,}\DecValTok{1}\NormalTok{],}
-\NormalTok{          [}\DecValTok{0}\NormalTok{,}\DecValTok{1}\NormalTok{,}\DecValTok{1}\NormalTok{,}\DecValTok{0}\NormalTok{,}\DecValTok{1}\NormalTok{,}\DecValTok{0}\NormalTok{]]}
-\end{Highlighting}
-\end{Shaded}
-\begin{retenir}
-    \emph{Pour la suite}, \textbf{connecte toi} avec tes identifiants Atrium
-au site \href{https://pa.dilla.fr/1b}{pa.dilla.fr/1b} puis
-\textbf{saisis} le code \texttt{0f37-92107} pour accéder à la version
-numérique de l'activité.
-
-        \end{retenir}\begin{eleve}
-    Pour chacun des 5 graphes ci-dessous :
+\textbf{Ouvrir} l'éditeur \texttt{Mu-editor}, \textbf{recopier} ce
+programme et le \textbf{téléverser} sur la carte (bouton
+\texttt{Flasher} \includegraphics{res/flash.png}).
 
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
+\setcounter{enumi}{1}
 \tightlist
 \item
-  Sur la feuille, \textbf{écris} à coté du graphe son tableau
-  d'adjacence.
-\item
-  Sur l'ordinateur, \textbf{modifie} le code puis \textbf{exécute} la
-  cellule
-\item
-  \textbf{Vérifie} si la représentation affichée est correcte.
+  \textbf{Observe} le fonctionnement de la carte et \textbf{propose} une
+  ou plusieurs interprétations (pour confirmer/infirmer tes
+  observations, tu peux manipuler les boutons présents sur la carte : A
+  / B / Reset).
 \end{enumerate}
 
-.
+\textbf{Présenter} tes réponses au professeur.
 
-\includegraphics{res/graph1.png}
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\setcounter{enumi}{2}
+\tightlist
+\item
+  \textbf{Indique} le nombre de fois qu'est exécutée l'instruction
+  conditionnelle.
+\item
+  \textbf{D'après toi}, combien de fois doit être exécutée l'instruction
+  conditionnelle pour que la carte reste à l'écoute des entrées et
+  réagisse chaque fois que l'état du bouton A change ?
+\item
+  \textbf{Améliore} le programme en tenant compte de tes observations et
+  de tes réponses aux questions précédentes.
+\end{enumerate}
 
-.
-
-.
-
-\includegraphics{res/graph2.png}
-
-.
-
-.
-
-\includegraphics{res/graph3.png}
-
-.
-
-.
-
-\includegraphics{res/graph4.png}
-
-.
-
-.
-
-\includegraphics{res/graph5.png}
-
-.
-
-.
+\textbf{Présente} la carte programmée au professeur.
         
         \end{eleve}\begin{formule}
     .

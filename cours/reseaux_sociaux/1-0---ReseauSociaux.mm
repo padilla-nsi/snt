@@ -316,7 +316,7 @@
 </node>
 <node TEXT="Centre / Rayon / Diamètre" ID="ID_582906682" CREATED="1633504080306" MODIFIED="1633504087823"/>
 <node TEXT="Représentation informatique" ID="ID_1528468026" CREATED="1631477785066" MODIFIED="1633504097415">
-<node ID="ID_1397405546" CREATED="1633504098100" MODIFIED="1633504935546"><richcontent TYPE="NODE">
+<node ID="ID_1397405546" CREATED="1633504098100" MODIFIED="1633523398855"><richcontent TYPE="NODE">
 
 <html>
   <head>
@@ -328,6 +328,7 @@
     </p>
   </body>
 </html>
+
 </richcontent>
 </node>
 </node>
