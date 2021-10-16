@@ -1,9 +1,9 @@
-<map version="freeplane 1.9.0">
+<map version="freeplane 1.9.8">
 <!--To view this file, download free mind mapping software Freeplane from http://freeplane.sourceforge.net -->
 <node TEXT="Carte d&apos;identité" LOCALIZED_STYLE_REF="AutomaticLayout.level.root" FOLDED="false" ID="ID_1090958577" CREATED="1409300609620" MODIFIED="1631347923846">
 <hook NAME="accessories/plugins/AutomaticLayout.properties" VALUE="ALL"/>
 <font BOLD="true"/>
-<hook NAME="MapStyle" background="#f9f9f8" zoom="1.1">
+<hook NAME="MapStyle" background="#f9f9f8" zoom="1.771">
     <properties show_icon_for_attributes="true" edgeColorConfiguration="#808080ff,#ff0000ff,#0000ffff,#00ff00ff,#ff00ffff,#00ffffff,#7c0000ff,#00007cff,#007c00ff,#7c007cff,#007c7cff,#7c7c00ff" show_note_icons="true" fit_to_viewport="false"/>
 
 <map_styles>
@@ -31,7 +31,7 @@
 <edge STYLE="hide_edge"/>
 <cloud COLOR="#f0f0f0" SHAPE="ROUND_RECT"/>
 </stylenode>
-<stylenode LOCALIZED_TEXT="defaultstyle.selection" COLOR="#eceff4" BACKGROUND_COLOR="#bf616a" STYLE="bubble" BORDER_COLOR_LIKE_EDGE="false" BORDER_COLOR="#bf616a"/>
+<stylenode LOCALIZED_TEXT="defaultstyle.selection" COLOR="#eceff4" BACKGROUND_COLOR="#bf616a" BORDER_COLOR_LIKE_EDGE="false" BORDER_COLOR="#bf616a"/>
 </stylenode>
 <stylenode LOCALIZED_TEXT="styles.user-defined" POSITION="right" STYLE="bubble">
 <stylenode LOCALIZED_TEXT="styles.important" ID="ID_915433779" BORDER_COLOR="#bf616a">
@@ -90,7 +90,7 @@
 <node TEXT="objectif, but du réseau social" ID="ID_1809281844" CREATED="1631348106062" MODIFIED="1631348113159"/>
 </node>
 <node TEXT="Modèle économique" POSITION="right" ID="ID_762094744" CREATED="1630869075535" MODIFIED="1631347984164"/>
-<node TEXT="Nombre d’abonnés" FOLDED="true" POSITION="right" ID="ID_501733696" CREATED="1630869075528" MODIFIED="1631347950191">
+<node TEXT="Nombre d&apos;utilisateurs" FOLDED="true" POSITION="right" ID="ID_501733696" CREATED="1630869075528" MODIFIED="1633962896266">
 <node TEXT="voir la différence entre abonnés actifs et abonnés inactifs" ID="ID_1865905658" CREATED="1631347953230" MODIFIED="1631347957291"/>
 </node>
 <node TEXT="Style graphique" FOLDED="true" POSITION="right" ID="ID_305035630" CREATED="1631348052192" MODIFIED="1631348057739">

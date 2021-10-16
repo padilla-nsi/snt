@@ -252,7 +252,7 @@
     \renewcommand{\LaTeX}{\textrm{\Oldlatex}}
     % Document parameters
     % Document title
-    \title{1-1---iot}
+    \title{1-2---iot-python}
     
     
     
@@ -467,7 +467,7 @@
       citecolor=citecolor,
       }
     % Slightly bigger margins than the latex defaults
-    \geometry{a4paper,tmargin=3cm,bmargin=2cm,lmargin=1cm,rmargin=1cm}\fancyhead[L]{Thème à définir}\fancyhead[L]{\adjustimage{height=1cm, valign=m}{/home/bouscadilla/Documents/Code/nbconvert/template/latex/pdf_solution/papier_eleve_ico_iot}}\fancyhead[C]{\bfseries\MakeUppercase{1-1---iot}}\fancyhead[C]{\bfseries\MakeUppercase{Objets connectés}}\fancyhead[R]{\monthyeardate\today}
+    \geometry{a4paper,tmargin=3cm,bmargin=2cm,lmargin=1cm,rmargin=1cm}\fancyhead[L]{Thème à définir}\fancyhead[L]{\adjustimage{height=1cm, valign=m}{/home/bouscadilla/Documents/Code/nbconvert/template/latex/pdf_solution/papier_eleve_ico_iot}}\fancyhead[C]{\bfseries\MakeUppercase{1-2---iot-python}}\fancyhead[C]{\bfseries\MakeUppercase{Objets connectés}}\fancyhead[R]{\monthyeardate\today}
 
     \fancyfoot[C]{\thepage}
     % #TODO ajouter les pages totales
@@ -485,151 +485,131 @@
     
 
     
-    \hypertarget{chap.-2-les-objets-connectuxe9s}{%
-\section{Chap. 2 --- Les objets
-connectés}\label{chap.-2-les-objets-connectuxe9s}}
-
-    \hypertarget{architecture-dun-systuxe8me-embarquuxe9}{%
-\subsection{2.1 --- Architecture d'un système
-embarqué}\label{architecture-dun-systuxe8me-embarquuxe9}}
+    \hypertarget{programmer-en-python}{%
+\subsection{2.3 --- Programmer en Python}\label{programmer-en-python}}
 \begin{eleve}
-    Tu as a ta disposition une carte \(\texttt{Micro:bit}\). Répondre aux
-questions suivantes concernant la carte.
+    \textbf{D'après toi}, que fait le programme ci-dessous ?
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\ImportTok{from}\NormalTok{ microbit }\ImportTok{import} \OperatorTok{*}
+\NormalTok{e0 }\OperatorTok{=}\NormalTok{ button\_a.is\_pressed()}
+\ControlFlowTok{if}\NormalTok{ e0:}
+\NormalTok{    display.show(}\StringTok{"1"}\NormalTok{)}
+\ControlFlowTok{else}\NormalTok{:}
+\NormalTok{    display.show(}\StringTok{"0"}\NormalTok{)}
+\end{Highlighting}
+\end{Shaded}
+
+\textbf{Ouvrir} l'éditeur \texttt{Mu-editor}, \textbf{recopier} ce
+programme et le \textbf{téléverser} sur la carte (bouton
+\texttt{Flasher} \includegraphics{res/flash.png}).
 
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
+\setcounter{enumi}{1}
 \tightlist
 \item
-  \textbf{Observe} la carte et \textbf{énumère} les différents
-  constituants de la carte \(\texttt{Micro:bit}\).
-\item
-  \textbf{Indique} le rôle de chacun.
-\item
-  \textbf{D'après toi}, à quoi sert le composant \emph{Processor}? que
-  contient-il ?
+  \textbf{Observe} le fonctionnement de la carte et \textbf{propose} une
+  ou plusieurs interprétations (pour confirmer/infirmer tes
+  observations, tu peux manipuler les boutons présents sur la carte : A
+  / B / Reset).
 \end{enumerate}
+
+\textbf{Présenter} tes réponses au professeur.
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\setcounter{enumi}{2}
+\tightlist
+\item
+  \textbf{Indique} le nombre de fois qu'est exécutée l'instruction
+  conditionnelle.
+\item
+  \textbf{D'après toi}, combien de fois doit être exécutée l'instruction
+  conditionnelle pour que la carte reste à l'écoute des entrées et
+  réagisse chaque fois que l'état du bouton A change ?
+\item
+  \textbf{Améliore} le programme en tenant compte de tes observations et
+  de tes réponses aux questions précédentes.
+\end{enumerate}
+
+\textbf{Présente} la carte programmée au professeur.
         
-        \end{eleve}\begin{remarque}
-    Un \textbf{système informatique embarqué} à bord d'un satellite, d'une
-voiture ou d'un congélateur est un \textbf{ordinateur} comme les autres,
-avec son processeur et sa mémoire.
-
-        \end{remarque}
-    \begin{figure}
-\centering
-\includegraphics{res/archi-von-neumann.png}
-\caption{légende}
-\end{figure}
+        \end{eleve}
+    Voici l'algorithme le plus courant d'un système informatique embarqué:
 \begin{retenir}
-    \textbf{Capteur} :
+    \begin{verbatim}
+initialiser les actionneurs à leurs positions de départ
+TANT QUE vrai :
+    | lire les informations des capteurs
+    | traiter ces informations
+    | calculer les informations pour les actionneurs
+    | écrire ces informations sur les actionneurs
+\end{verbatim}
 
-.
+        \end{retenir}\begin{remarque}
+    Quand on programme un calcul en mathématique, on veut qu'il
+s'\textbf{arrête}. Pour un système embarqué, \textbf{c'est le
+contraire}.
 
-.
+        \end{remarque}\begin{exemple}
+    C'est avec ce genre d'algorithme que le calculateur de bord d'une
+voiture autonome peut suivre la bonne trajectoire sur l'autoroute en
+\textbf{lisant} la position des lignes blanches et en
+\textbf{actionnant} le volant.
 
-        \end{retenir}\begin{retenir}
-    \textbf{Actionneur} :
+        \end{exemple}\begin{exemple}
+    Voici un programme écrit en Python qui permet de contrôler l'affichage
+des LED de la carte micro:bit en fonction de l'appui sur le bouton A:
 
-.
+\begin{Shaded}
+\begin{Highlighting}[]
+\ImportTok{from}\NormalTok{ microbit }\ImportTok{import} \OperatorTok{*}
+\ControlFlowTok{while} \VariableTok{True}\NormalTok{:}
+    \ControlFlowTok{if}\NormalTok{ button\_a.is\_pressed():}
+\NormalTok{        display.show(Image.HAPPY)}
+    \ControlFlowTok{else}\NormalTok{:}
+\NormalTok{        display.clear()}
+\end{Highlighting}
+\end{Shaded}
 
-.
+        \end{exemple}
+    \textbf{Documentation du système de pilotage de Tesla}
+\begin{formule}
+    Huit caméras panoramiques offrent une visibilité à 360° autour de la
+voiture avec une portée de 250 m. À cela viennent s'ajouter douze
+capteurs à ultrasons nouvelle génération, permettant de détecter les
+objets solides ou les liquides avec une portée et une précision
+quasiment deux fois supérieure au système précédent. Un radar avant à
+haute capacité de traitement complète les données environnementales
+grâce à une longueur d'onde redondante capable de voir à travers de
+fortes pluies, le brouillard, la poussière et même la voiture qui vous
+précède.
 
-        \end{retenir}\begin{exemple}
-    \begin{longtable}[]{@{}ll@{}}
-\toprule
-\begin{minipage}[b]{0.47\columnwidth}\raggedright
-\textbf{capteurs}\strut
-\end{minipage} & \begin{minipage}[b]{0.47\columnwidth}\raggedright
-\textbf{actionneurs}\strut
-\end{minipage}\tabularnewline
-\midrule
-\endhead
-\begin{minipage}[t]{0.47\columnwidth}\raggedright
-capteur de température, pression, vitesse, interrupteur, etc.\strut
-\end{minipage} & \begin{minipage}[t]{0.47\columnwidth}\raggedright
-vanne, électro-aimant, moteur, vérin, LED, etc.\strut
-\end{minipage}\tabularnewline
-\begin{minipage}[t]{0.47\columnwidth}\raggedright
-\strut
-\end{minipage} & \begin{minipage}[t]{0.47\columnwidth}\raggedright
-\strut
-\end{minipage}\tabularnewline
-\begin{minipage}[t]{0.47\columnwidth}\raggedright
-\strut
-\end{minipage} & \begin{minipage}[t]{0.47\columnwidth}\raggedright
-\strut
-\end{minipage}\tabularnewline
-\begin{minipage}[t]{0.47\columnwidth}\raggedright
-\strut
-\end{minipage} & \begin{minipage}[t]{0.47\columnwidth}\raggedright
-\strut
-\end{minipage}\tabularnewline
-\begin{minipage}[t]{0.47\columnwidth}\raggedright
-\strut
-\end{minipage} & \begin{minipage}[t]{0.47\columnwidth}\raggedright
-\strut
-\end{minipage}\tabularnewline
-\begin{minipage}[t]{0.47\columnwidth}\raggedright
-\strut
-\end{minipage} & \begin{minipage}[t]{0.47\columnwidth}\raggedright
-\strut
-\end{minipage}\tabularnewline
-\begin{minipage}[t]{0.47\columnwidth}\raggedright
-\strut
-\end{minipage} & \begin{minipage}[t]{0.47\columnwidth}\raggedright
-\strut
-\end{minipage}\tabularnewline
-\bottomrule
-\end{longtable}
+Afin de traiter toutes ces données, un nouvel ordinateur de bord doté
+d'une puissance de calcul 40 fois supérieure à la génération précédente
+s'appuie sur le nouveau réseau neuronal Tesla pour les logiciels de
+visualisation, de sonar et de radar. Ce système offre ainsi une
+perception de l'environnement infiniment supérieure à celle d'un
+conducteur, surveillant simultanément toutes les directions, sur des
+longueurs d'ondes imperceptibles par l'homme.
 
-        \end{exemple}\begin{retenir}
-    Un régulateur de vitesse dans une voiture est un \textbf{système
-informatique de contrôle} :
+Autopilot permet à votre véhicule de maintenir une trajectoire,
+d'accélérer et de freiner automatiquement dans sa voie. Les
+fonctionnalités actuelles de l'Autopilot exigent une surveillance active
+de la part du conducteur et ne rendent pas le véhicule autonome.
 
-.
+        \end{formule}
+    \emph{source: \url{https://www.tesla.com/fr_FR/autopilot}}
 
-.
-
-.
-
-.
-
-.
-
-.
-
-        \end{retenir}
-    \hypertarget{programmation-dun-systuxe8me-embarquuxe9}{%
-\subsection{2.2 --- Programmation d'un système
-embarqué}\label{programmation-dun-systuxe8me-embarquuxe9}}
+    
 \begin{eleve}
-    Avec l'ordinateur, connecte toi au site
-\textbf{\url{https://makecode.microbit.org}}
+    \textbf{Énumère} (1) les capteurs disponibles sur cette voiture (à
+partir du texte et aussi de vos déductions) et (2) les actionneurs
+indispensables pour le pilotage de cette voiture.
 
-Par groupe de 2, programme ta carte Micro:bit à l'aide des 6 tutoriels :
-
-\begin{enumerate}
-\def\labelenumi{\arabic{enumi}.}
-\tightlist
-\item
-  Flashing Heart
-\item
-  Name tag
-\item
-  Smiley Buttons
-\item
-  Dice
-\item
-  Love Meter
-\item
-  Micro Chat
-\end{enumerate}
-
-\begin{figure}
-\centering
-\includegraphics{res/makecode.png}
-\caption{tutoriels makecode}
-\end{figure}
+\textbf{Identifie} quelques algorithmes de contrôle utilisés.
         
         \end{eleve}\begin{formule}
     .
