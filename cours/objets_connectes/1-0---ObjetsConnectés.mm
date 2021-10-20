@@ -3,7 +3,7 @@
 <node TEXT="Objets connectés" LOCALIZED_STYLE_REF="AutomaticLayout.level.root" FOLDED="false" ID="ID_1090958577" CREATED="1409300609620" MODIFIED="1634039952170">
 <hook NAME="accessories/plugins/AutomaticLayout.properties" VALUE="ALL"/>
 <font BOLD="true"/>
-<hook NAME="MapStyle" background="#f9f9f8" zoom="0.912">
+<hook NAME="MapStyle" background="#f9f9f8" zoom="2.598">
     <properties show_icon_for_attributes="true" edgeColorConfiguration="#808080ff,#ff0000ff,#0000ffff,#00ff00ff,#ff00ffff,#00ffffff,#7c0000ff,#00007cff,#007c00ff,#7c007cff,#007c7cff,#7c7c00ff" show_note_icons="true" fit_to_viewport="false"/>
 
 <map_styles>
@@ -79,7 +79,7 @@
 </stylenode>
 </map_styles>
 </hook>
-<node TEXT="Observation carte Micro:bit" FOLDED="true" POSITION="right" ID="ID_1035275603" CREATED="1633964496340" MODIFIED="1634040007191">
+<node TEXT="Observation carte Micro:bit" POSITION="right" ID="ID_1035275603" CREATED="1633964496340" MODIFIED="1634040007191">
 <node TEXT="Activité 1" FOLDED="true" ID="ID_753413159" CREATED="1634040151297" MODIFIED="1634040154469">
 <node TEXT="Processor" ID="ID_1421980927" CREATED="1633588745053" MODIFIED="1633588770310">
 <node TEXT="cerveau de la carte" ID="ID_1098616623" CREATED="1634040016251" MODIFIED="1634040024253"/>
@@ -124,7 +124,7 @@
 </node>
 </node>
 </node>
-<node TEXT="Définitions" FOLDED="true" ID="ID_948572021" CREATED="1634040189130" MODIFIED="1634040195314">
+<node TEXT="Définitions" ID="ID_948572021" CREATED="1634040189130" MODIFIED="1634040195314">
 <node ID="ID_1202746710" CREATED="1634040196364" MODIFIED="1634040242727"><richcontent TYPE="NODE">
 
 <html>
