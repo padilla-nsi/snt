@@ -1,0 +1,93 @@
+% Pour imprimer 4 tableaux par page
+% pdfjam --nup 2x2 --a4paper -q main.pdf -o main-imprim.pdf
+
+\documentclass[17pt]{extarticle}
+
+\usepackage[a5paper,top=1.5cm,bottom=1.5cm,left=1.5cm,right=1.5cm]{geometry}
+
+\usepackage[sfdefault, condensed]{roboto} % police d'écriture plus moderne
+\usepackage[french]{babel} % francisation
+\usepackage[parfill]{parskip} %suppression indentation
+
+\usepackage{multicol}
+\usepackage{tabularx}
+
+\usepackage[table]{xcolor}
+\definecolor{deepblue}{rgb}{0.3,0.3,0.8}
+\definecolor{darkblue}{rgb}{0,0,0.3}
+\definecolor{deepred}{rgb}{0.6,0,0}
+\definecolor{iremred}{RGB}{204,35,50}
+\definecolor{deepgreen}{rgb}{0,0.6,0}
+\definecolor{backcolor}{rgb}{0.98,0.95,0.95}
+\definecolor{grisClair}{rgb}{0.95,0.95,0.95}
+\definecolor{orangeamu}{RGB}{250,178,11}
+\definecolor{noiramu}{RGB}{35,31,32}
+\definecolor{bleuamu}{RGB}{20,118,198}
+\definecolor{bleuamudark}{RGB}{15,90,150}
+\definecolor{cyanamu}{RGB}{77,198,244}
+
+\pagenumbering{gobble} % to switch off page numbering.
+
+
+% Tableaux identiques avec seulement le prénom qui change
+\newcommand{\vegetarien}{%
+\section*{Végétarien}
+\vfill
+\begin{tabularx}{\linewidth}{|X|} \hline
+     \\ \hline
+    brocolis \\ \hline
+    brocolis vinaigrette \\ \hline
+    choucroute \\ \hline
+    crumble \\ \hline
+    crumble ratatouille \\ \hline
+    fromage \\ \hline
+    gnocchi aux légumes \\ \hline
+    gratin de chou-fleur \\ \hline
+     \\ \hline
+    omelette aux champignons \\ \hline
+     \\ \hline
+     \\ \hline
+     \\ \hline
+     \\ \hline
+    ratatouille \\ \hline
+     \\ \hline
+    soufflé au fromage \\ \hline
+    vinaigrette \\ \hline
+\end{tabularx}
+\newpage
+}
+
+\newcommand{\carnivore}{%
+\section*{Non-végétarien}
+\vfill
+\begin{tabularx}{\linewidth}{|X|} \hline
+    bouchées à la reine \\ \hline
+     \\ \hline
+     \\ \hline
+     \\ \hline
+     \\ \hline
+     \\ \hline
+     \\ \hline
+     \\ \hline
+     \\ \hline
+    lasagnes chèvre-épinards \\ \hline
+     \\ \hline
+    pâtes carbonara \\ \hline
+    pizza regina \\ \hline
+    potée lorraine \\ \hline
+    quenelles \\ \hline
+     \\ \hline
+     \\ \hline
+     \\ \hline
+     \\ \hline
+\end{tabularx}
+\newpage
+}
+
+
+\begin{document}
+    \vegetarien
+    \vegetarien
+    \carnivore
+    \carnivore
+\end{document}

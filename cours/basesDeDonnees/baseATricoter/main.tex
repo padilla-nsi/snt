@@ -1,0 +1,78 @@
+% Pour imprimer 4 tableaux par page
+% pdfjam --nup 2x2 --a4paper -q main.pdf -o main-imprim.pdf
+
+\documentclass[14pt]{extarticle}
+
+\usepackage[a5paper,top=1cm,bottom=1cm,left=1.5cm,right=1.5cm]{geometry}
+
+\usepackage[sfdefault, condensed]{roboto} % police d'écriture plus moderne
+\usepackage[french]{babel} % francisation
+\usepackage[parfill]{parskip} %suppression indentation
+
+\usepackage{multicol}
+\usepackage{tabularx}
+
+\usepackage[table]{xcolor}
+\definecolor{deepblue}{rgb}{0.3,0.3,0.8}
+\definecolor{darkblue}{rgb}{0,0,0.3}
+\definecolor{deepred}{rgb}{0.6,0,0}
+\definecolor{iremred}{RGB}{204,35,50}
+\definecolor{deepgreen}{rgb}{0,0.6,0}
+\definecolor{backcolor}{rgb}{0.98,0.95,0.95}
+\definecolor{grisClair}{rgb}{0.95,0.95,0.95}
+\definecolor{orangeamu}{RGB}{250,178,11}
+\definecolor{noiramu}{RGB}{35,31,32}
+\definecolor{bleuamu}{RGB}{20,118,198}
+\definecolor{bleuamudark}{RGB}{15,90,150}
+\definecolor{cyanamu}{RGB}{77,198,244}
+
+\pagenumbering{gobble} % to switch off page numbering.
+
+\newcommand{\rul}{\rule{0cm}{0.82cm}}
+
+% Tableaux identiques avec seulement le prénom qui change
+\newcommand{\tab}[1]{%
+\textbf{\sc #1}
+\vfill
+\begin{tabularx}{\linewidth}{|X|} \hline
+    bouchées à la reine \rul \\ \hline
+    brocolis \rul \\ \hline
+    brocolis vinaigrette \rul \\ \hline
+    choucroute \rul \\ \hline
+    crumble \rul \\ \hline
+    crumble ratatouille \rul \\ \hline
+    fromage \rul \\ \hline
+    gnocchi aux légumes \rul \\ \hline
+    gratin de chou-fleur \rul \\ \hline
+    lasagnes chèvre-épinards \rul \\ \hline
+    omelette aux champignons \rul \\ \hline
+    pâtes carbonara \rul \\ \hline
+    pizza regina \rul \\ \hline
+    potée lorraine \rul \\ \hline
+    quenelles \rul \\ \hline
+    ratatouille \rul \\ \hline
+    soufflé au fromage \rul \\ \hline
+    vinaigrette \rul \\ \hline
+\end{tabularx}
+\newpage
+}
+
+
+\begin{document}
+    \tab{Thierry}
+    \tab{Liliane}
+    \tab{Florent}
+    \tab{Claude}
+    \tab{Paolo}
+    \tab{Laura}
+    \tab{Marie-Jo}
+    \tab{Esther}
+    \tab{Lucie}
+    \tab{Hélène}
+    \tab{Emilie}
+    \tab{Sylvain}
+    \tab{Steve}
+    \tab{Steve}
+    \tab{Steve}
+    \tab{Steve}
+\end{document}
