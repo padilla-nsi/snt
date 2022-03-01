@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<title>Frise chronologique</title>
+<meta charset="utf-8">
+
+  
+<!-- Timeline -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+
+
+<!-- Chargement de la feuille de style css timeline -->
+<link title="timeline-styles" rel="stylesheet" href="https://cdn.knightlab.com/libs/timeline3/latest/css/timeline.css">
+
+
+<!-- Chargement de la bibliothèque javascript timeline -->
+<script src="https://cdn.knightlab.com/libs/timeline3/latest/js/timeline.js"></script>
+
+<!-- Papaparse -->
+      
+<!-- Chargement de la bibliothèque javascript papaparse -->
+<script src='https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.0.1/papaparse.min.js'></script>
+    
+    
+<!-- Styles et javascript personnalisés -->
+
+<link rel="stylesheet"  href="css/style_frise.css" />  
+    
+<!-- Chargement du code Javascript qui parse le fichier de données et génère la frise -->
+    
+<script src="js/frise_javascript.js"></script>
+    
+</head>
+    
+<body>
+
+    
+     
+    
+    
+       <div>
+          <input type="button" id="btn-charger" value="charger frise_data.csv"/>
+        </div>
+    
+      <div id='timeline-embed'>     
+  		</div>
+    
+
+</body>
+</html>
