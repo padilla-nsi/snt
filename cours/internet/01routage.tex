@@ -534,101 +534,100 @@ arriver à destination ?
 
 Nous allons essayer de comprendre cela !
 
-    \hypertarget{mise-en-place}{%
-\subsection{1. Mise en place}\label{mise-en-place}}
+    \hypertarget{uxe9tapes-du-protocole}{%
+\subsection{1. Étapes du protocole}\label{uxe9tapes-du-protocole}}
 \begin{retenir}
-    \textbf{Étape 1.} Chaque élève pioche une adresse email qui doit rester
-\textbf{secrète} (parmi \texttt{eleve\_1@lycee.com},
-\texttt{eleve\_2@lycee.com},\ldots{} , \texttt{eleve\_36@lycee.com},
-etc.)
+    \textbf{Étape 1.} Chaque élève choisit un \emph{identifiant} à 3
+chiffres. Cet identifiant est \textbf{secret} et doit être différent
+pour chaque élève.
 
         \end{retenir}\begin{retenir}
-    \textbf{Étape 2.} Chaque élève prend connaissance de son
-\textbf{correspondant} : la personnes à laquelle elle peut écrire.
+    \textbf{Étape 2.} Chaque élève crée sa \textbf{table de routage}
+personnelle en indiquant sur la feuille son \emph{prénom} en première
+ligne suivie de \texttt{(par\ -)}
 
-        \end{retenir}\begin{exemple}
-    \begin{itemize}
+        \end{retenir}\begin{retenir}
+    \textbf{Étape 3.} Chaque élève :
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
 \tightlist
 \item
-  Djamel \textsubscript{(eleve2@lycee.com)} -\textgreater{} Ada
-  \textsubscript{(eleve\_1@lycee.com)}
+  \emph{fait une copie} de sa table de routage (sur une autre feuille),
 \item
-  Frédérique \textsubscript{(eleve\_3@lycee.com)} -\textgreater{} Djamel
-  \textsubscript{(eleve2@lycee.com)}
-\end{itemize}
-
-        \end{exemple}
-    \hypertarget{premier-message}{%
-\subsection{2. Premier message}\label{premier-message}}
-\begin{retenir}
-    \textbf{Étape 3.} Chaque élève prend une demi-feuilles de papiers (le
-\textbf{mail}) et écrit dessus :
-
-\begin{verbatim}
-expéditeur: <mail_secret@@lycee.com>
-sujet: Hello
-<mon prénom>
-\end{verbatim}
+  ajoute son numéro secret d'expéditeur dans l'en-tête,
+\item
+  transmet \emph{la copie} à l'élève à qui il est \emph{connecté}.
+\end{enumerate}
 
         \end{retenir}\begin{retenir}
-    \textbf{Étape 4.} Chaque élève envoie son mail: il donne la feuille à
-son correspondant.
+    \textbf{Étape 4.} Lorsqu'un élève reçoit la table de routage d'un de ses
+nœuds, il effectue le traitement suivant :
 
-        \end{retenir}\begin{eleve}
+\begin{itemize}
+\tightlist
+\item
+  Comparer la table reçue avec sa table personnelle.
+\item
+  Si un \emph{nouveau prénom} apparaît, ajouter une ligne dans la table
+  personnelle en indiquant :
+  \texttt{\textless{}nouveau\ prénom\textgreater{}\ (par\ \textless{}identifiant\ secret\ de\ expéditeur\textgreater{})}.
+\item
+  Supprimer la table reçue (pour la poubelle de recyclage SVP).
+\end{itemize}
+
+        \end{retenir}\begin{retenir}
+    \textbf{Étape 5.} Si la table de routage a été modifiée, l'élève :
+
+\begin{itemize}
+\tightlist
+\item
+  fait la liste des expéditeurs avec qui il est connecté,
+\item
+  fait autant de copie de sa table de routage qu'il y a d'expéditeur,
+\item
+  envoie une copie de sa table à chaque expéditeur.
+\end{itemize}
+
+Ensuite, l'élève reprend en boucle son attente à l'\textbf{étape 4}.
+
+        \end{retenir}
+    \hypertarget{exemples-et-activituxe9s}{%
+\subsection{2. Exemples et activités}\label{exemples-et-activituxe9s}}
+\begin{exemple}
+    Imaginons un réseau de 3 élèves connectés ainsi :
+
+\begin{itemize}
+\tightlist
+\item
+  Djamel \textsubscript{(456)} -\textgreater{} Ada \textsubscript{(789)}
+\item
+  Frédérique \textsubscript{(123)} -\textgreater{} Djamel
+  \textsubscript{(456)}
+\end{itemize}
+
+Alors après l'\textbf{étape 2} Djamel écrira sur sa table de routage :
+
+\begin{verbatim}
+Table de routage de <identifiant secret>
+DJAMEL (par -)
+\end{verbatim}
+
+        \end{exemple}\begin{eleve}
     Quelles informations nouvelles possède chaque correspondant ? Quel est
 maintenant le nombre de correspondant de chaque élève ?
         
-        \end{eleve}
-    \hypertarget{premiuxe8res-ruxe9ponses}{%
-\subsection{3. Premières réponses}\label{premiuxe8res-ruxe9ponses}}
-\begin{retenir}
-    \textbf{Étape 5.} Chaque élève note sur une demi-feuille personnelle sa
-table de routage:
-
-\begin{verbatim}
-<son prénom> (par -)
-<prénom du correspondant> (par <mail du correspondant>)
-\end{verbatim}
-
-        \end{retenir}\begin{eleve}
-    Que note Djamel dans sa table de routage ? Et Ada ?
+        \end{eleve}\begin{eleve}
+    Quelle sera la table de routage de Frédérique ?
         
-        \end{eleve}\begin{retenir}
-    \textbf{Étape 6.} Chaque élève envoie à tous ses correspondants une
-copie de sa table de routage.
+        \end{eleve}\begin{eleve}
+    Indiquer les tables de Djamel et Ada après l'étape 4.
 
-        \end{retenir}\begin{eleve}
-    Est ce que les correspondants reçoivent de nouvelles informations ? Si
-oui, lesquelles ?
+La table de Frédérique a-t-elle été modifiée ?
         
-        \end{eleve}
-    \hypertarget{mise-uxe0-jour-des-tables-de-routage}{%
-\subsection{4. Mise à jour des tables de
-routage}\label{mise-uxe0-jour-des-tables-de-routage}}
-\begin{retenir}
-    \textbf{Étape 7.} Lorsqu'un élève reçoit la table de routage d'un de ses
-correspondant, il met à jour, si besoin, sa tables de routage :
-
-\begin{itemize}
-\item
-  il ajoute une ligne pour chaque \textbf{nouveau prénom} et y écrit:
-
-  (par )
-\end{itemize}
-
-        \end{retenir}\begin{eleve}
-    Q1. Compléter les tables de Djamel et d'Ada.
-
-Q2. Est-ce que la table de Frédérique est modifiée ? Si oui, écrire sa
-table.
-        
-        \end{eleve}\begin{retenir}
-    \textbf{Étape 8.} Tant qu'un élève a sa table de routage modifiée par
-une mise à jour, on reprend à l'étape 6.
-
-        \end{retenir}\begin{eleve}
+        \end{eleve}\begin{eleve}
     Écrire les tables finales obtenues par Djamel, Ada et Frédérique
-lorsqu'il n'y a plus de mail échangés.
+lorsqu'il n'y a plus de messages échangés.
         
         \end{eleve}
 
