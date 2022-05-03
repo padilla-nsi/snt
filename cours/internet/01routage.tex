@@ -528,70 +528,91 @@
     \hypertarget{le-routage-sur-internet}{%
 \section{Le routage sur Internet}\label{le-routage-sur-internet}}
 
-    Comment un e-mail ne comportant que l'adresse de l'\textbf{expéditeur}
-et du \textbf{destinataire} fait-il pour circuler sur Internet\ldots. et
-arriver à destination ?
+    Pour circuler sur Internet, un e-mail n'a que deux informations :
+l'adresse de l'\textbf{expéditeur} et celle du \textbf{destinataire}.
 
-Nous allons essayer de comprendre cela !
+Mais alors, comment font les messages pour traverser la planète ?
 
-    \hypertarget{uxe9tapes-du-protocole}{%
-\subsection{1. Étapes du protocole}\label{uxe9tapes-du-protocole}}
-\begin{retenir}
-    \textbf{Étape 1.} Chaque élève choisit un \emph{identifiant} à 3
-chiffres. Cet identifiant est \textbf{secret} et doit être différent
-pour chaque élève.
+    \hypertarget{protocole-de-routage-des-messages-entres-uxe9luxe8ves}{%
+\subsection{1. Protocole de routage des messages entres
+élèves}\label{protocole-de-routage-des-messages-entres-uxe9luxe8ves}}
 
-        \end{retenir}\begin{retenir}
-    \textbf{Étape 2.} Chaque élève crée sa \textbf{table de routage}
-personnelle en indiquant sur la feuille son \emph{prénom} en première
-ligne suivie de \texttt{(par\ -)}
+    L'objectif de ce protocole est de faire construire par chaque élève un
+tableau indiquant, pour chaque camarade accessible, la direction à
+prendre.
 
-        \end{retenir}\begin{retenir}
-    \textbf{Étape 3.} Chaque élève :
+    \textbf{Étape 1.} Créer une table de routage personnelle qui ne devra
+\textbf{jamais} circuler :
 
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
 \tightlist
 \item
-  \emph{fait une copie} de sa table de routage (sur une autre feuille),
+  prendre une petite feuille de papier
 \item
-  ajoute son numéro secret d'expéditeur dans l'en-tête,
+  rayer l'entête inutile : \texttt{exp.\ ....\ dest.\ ....}
 \item
-  transmet \emph{la copie} à l'élève à qui il est \emph{connecté}.
+  sur la première ligne: écrire son prénom
+  \texttt{.....\ (par\ -\ \ \ D.\ 0)}
 \end{enumerate}
 
-        \end{retenir}\begin{retenir}
-    \textbf{Étape 4.} Lorsqu'un élève reçoit la table de routage d'un de ses
-nœuds, il effectue le traitement suivant :
+\textbf{Étape 2.} Premier message.
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  faire une \textbf{copie} de sa table de routage (sur une autre
+  feuille),
+\item
+  compléter l'entête (\emph{expéditeur} : son prénom,
+  \emph{destinataire} : prénom du camarade à qui il est connecté)
+\item
+  donner la \textbf{copie} au camarade connecté
+\end{enumerate}
+
+\textbf{Étape 3.} Attendre de recevoir un message\ldots{}
+
+\textbf{Étape 4.} Un message arrive !
 
 \begin{itemize}
 \tightlist
 \item
-  Comparer la table reçue avec sa table personnelle.
+  Comparer le message reçu avec sa table personnelle.
 \item
-  Si un \emph{nouveau prénom} apparaît, ajouter une ligne dans la table
+  Pour chaque nouveau prénom, ajouter une ligne dans la table
   personnelle en indiquant :
-  \texttt{\textless{}nouveau\ prénom\textgreater{}\ (par\ \textless{}identifiant\ secret\ de\ expéditeur\textgreater{})}.
-\item
-  Supprimer la table reçue (pour la poubelle de recyclage SVP).
 \end{itemize}
 
-        \end{retenir}\begin{retenir}
-    \textbf{Étape 5.} Si la table de routage a été modifiée, l'élève :
+\texttt{\textless{}prénom\textgreater{}\ (par\ \textless{}expéditeur\textgreater{}\ D\ \textless{}distance\_expediteur\ +\ 1\textgreater{})}
 
 \begin{itemize}
 \tightlist
 \item
-  fait la liste des expéditeurs avec qui il est connecté,
-\item
-  fait autant de copie de sa table de routage qu'il y a d'expéditeur,
-\item
-  envoie une copie de sa table à chaque expéditeur.
+  Supprimer la table reçue (recyclage ou poubelle SVP).
 \end{itemize}
 
-Ensuite, l'élève reprend en boucle son attente à l'\textbf{étape 4}.
+\textbf{Étape 5.} Si la table de routage a été modifiée:
 
-        \end{retenir}
+\begin{itemize}
+\tightlist
+\item
+  faire autant de copie de sa table que de camarade à une distance
+  \texttt{D1}
+\item
+  pour chaque copie
+
+  \begin{itemize}
+  \tightlist
+  \item
+    compléter l'entête (\emph{expéditeur}/\emph{destinataire})
+  \item
+    puis donner la copie au camarade \texttt{D1}.
+  \end{itemize}
+\end{itemize}
+
+\textbf{Étape 6.} Passer à l'\textbf{Étape 3}.
+
     \hypertarget{exemples-et-activituxe9s}{%
 \subsection{2. Exemples et activités}\label{exemples-et-activituxe9s}}
 \begin{exemple}
